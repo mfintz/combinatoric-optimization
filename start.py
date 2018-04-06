@@ -11,7 +11,7 @@ MIN_NUM_OF_JOBS = 1
 def handleInput():
     if input("Would you like to generate a new input file? Y/N\n") == "Y":
         num_of_machines = input("Please enter the number of machines: \n")
-        max_processing_time = input("Please enter the maximum processing time for a single job: \n")
+        max_processing_time = int(input("Please enter the maximum processing time for a single job: \n"))
         print("max process time is :", max_processing_time)
 
 
@@ -68,6 +68,9 @@ class Job(object):
         self.type = kind
 
 
+    def __iter__(self):
+        return iter(self)
+
     def __str__(self):
         return "#: %s Length :%s Type: %s" % (self.number, self.length, self.type)
 
@@ -84,19 +87,35 @@ class Job(object):
         else:
             return True
 
+
+
     def getNumber(self):
         return self.number
 
+    def getLength(self):
+        return self.length
+
+
+
+
 class Machine(object):
     def __init__(self, num):
-        self.assigned_jobs = []
-        self.number = num
+        # self.assigned_jobs = [] #TODO: maybe switch to dictionary
+        self.assigned_jobs = {}
+        self.number = num # Machine serial #
+        self.span = 0   # Initial makespan
 
+
+    # def __str__(self):
+    #     ret = ""
+    #     for a in self.assigned_jobs:
+    #        ret.join(a.getNumber()).join(", ")
+    #     return "Jobs numbers : %s" % (ret)
 
     def __str__(self):
         ret = ""
-        for a in self.assigned_jobs:
-           ret.join(a.getNumber()).join(", ")
+        for key, val in self.assigned_jobs:
+           ret.join(val.getNumber()).join(", ")
         return "Jobs numbers : %s" % (ret)
 
     def __repr__(self):
@@ -106,20 +125,50 @@ class Machine(object):
         return "Jobs numbers : %s" % (ret)
 
     def __iter__(self):
-        return iter(self.d)
+        return iter(self)
 
-    def __getitem__(self, index):
-        return self.d[index]
+    # def __getitem__(self, index):
+    #     return self.d[index]
+    #
+    # def __setitem__(self, index, value):
+    #     self.d[index] = value
 
-    def __setitem__(self, index, value):
-        self.d[index] = value
-
-
+    def retrieveJobsList(self):
+        return self.assigned_jobs
 
     def addJob(self, job):
-        self.assigned_jobs.append(job)
+        self.assigned_jobs[job.getNumber()] = job
+        self.span += job.getLength()
+
+    # def retrieveJob(self, job_number):
+    #     for j in self.assigned_jobs:
+    #         if j.getNumber() == job_number:
+    #             return j
+    #     else:
+    #         return None
+
+    def retrieveJob(self, job_number):
+        return self.assigned_jobs[job_number]
 
 
+    # def removeJob(self, job_number):
+    #     job = self.retrieveJob(job_number)
+    #     self.assigned_jobs.remove(job)
+    #     self.span -= job.getLength()
+
+
+
+    def removeJob(self, job_number):
+        job = self.retrieveJob(job_number)
+        del (self.assigned_jobs[job_number])
+        self.span -= job.getLength()
+
+    # def makeSpan(self):
+    #     span = 0
+    #     for job in self.assigned_jobs:
+    #         span += job.getLength()
+    #     return span
+    #
 
 
 
@@ -142,7 +191,7 @@ def createMachines():
 def createJobs():
     jobs_list = []
     for job in raw_jobs:
-        cur_job = Job(job[0], job[1], job[2])
+        cur_job = Job(int(job[0]), int(job[1]), int(job[2]))
         print("Created: ",job[0], " ", job[1], " ", job[2])
         jobs_list.append(cur_job)
     return jobs_list
@@ -154,6 +203,48 @@ jobs_list = createJobs()
 
 for j in jobs_list:
     ran_machine = randint(0, num_of_machines-1)
-    machines_list[ran_machine].assigned_jobs.append(j)
+    machines_list[ran_machine].addJob(j)
+
+print("------------------------------------------------\n")
+
+for j in jobs_list:
+    print(j)
+
+print("------------------------------------------------\n")
+
+for machine in machines_list:
+    cur_job_list = machine.retrieveJobsList()
+    for job in cur_job_list:
+        print("machine#: ",machine.number ,"assigned jobs #: ", job)
+print("------------------------------------------------\n")
+
+#
+# for m in machines_list:
+#     m_j = m.assigned_jobs
+#     for job in m_j:
+#         num = job.number
+#         m.removeJob(num)
+#     print()
+
+
+for machine in machines_list:
+    cur_jobs = dict(machine.assigned_jobs)
+    for key, job in cur_jobs.items():
+        if key != job.number:
+            print("SOMETHING WENT WRONG")
+        num = job.number
+        machine.removeJob(num)
+        print("REMOVED  -- machine#: ",machine.number ,"assigned jobs: ", job)
+
+print("---------------MACHINES' JOB LISTS-----------------------\n")
+
+for machine in machines_list:
+    cur_jobs = dict(machine.assigned_jobs)
+    for key, job in cur_jobs.items():
+        if key != job.number:
+            print("SOMETHING WENT WRONG")
+        num = job.number
+        print("REMOVED  -- machine#: ",machine.number ,"assigned jobs: ", job)
+
 
 print()
