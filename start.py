@@ -4,7 +4,7 @@ from random import randint
 # Constants
 NUM_OF_TYPES = 5
 
-MAX_NUM_OF_JOBS = 1000
+MAX_NUM_OF_JOBS = 50
 MIN_NUM_OF_JOBS = 1
 
 debug_file = open("debugout.txt","w")
@@ -74,7 +74,7 @@ class Job(object):
         self.number = ind
         self.length = length
         self.type = kind
-
+        self.in_machine = -1
 
     def __iter__(self):
         return iter(self)
@@ -120,8 +120,8 @@ class Machine(object):
 
     def __str__(self):
         ret = ""
-        for key, val in self.assigned_jobs:
-           ret.join(val.getNumber()).join(", ")
+        for key, val in self.assigned_jobs.items():
+            ret.join(val.getNumber()).join(", ")
         return "Jobs numbers : %s" % (ret)
 
     def __repr__(self):
@@ -146,7 +146,7 @@ class Machine(object):
         self.assigned_jobs[job.getNumber()] = job
         self.span += job.getLength()
         self.types[job.getType()-1] = self.types[job.getType()-1] + 1
-
+        job.in_machine = self.number
 
 
     def retrieveJob(self, job_number):
@@ -154,12 +154,13 @@ class Machine(object):
 
 
 
-
+    # removing job from the machine by job number
     def removeJob(self, job_number):
         job = self.retrieveJob(job_number)
         del (self.assigned_jobs[job_number])
         self.span -= job.getLength()
         self.types[job.getType()-1] = self.types[job.getType()-1] - 1
+        job.in_machine = -1
 
     # def makeSpan(self):
     #     span = 0
@@ -178,6 +179,24 @@ class Machine(object):
             return True
         else:
             return False
+
+    # Check how many different types do I have
+    def checkDiffTypes(self):
+        count = 0
+        for t in self.types:
+            if t > 0 :
+                count = count + 1
+        return count
+
+    # returns a list of the types numbers assigned
+    def getTypes(self):
+        re_list = []
+        for index, t in enumerate(self.types):
+            if t > 0:
+                re_list.append(index)
+        return re_list
+
+
 
 
 
@@ -231,8 +250,30 @@ def initialAssign():
 
 
 
+def finalMakeSpan():
+    max_span = 0
+    for machine in machines_list:
+        if machine.span > max_span:
+            max_span = machine.span
+    return max_span
+
+
 # Print machines' stats
 def printMachineStat():
+    print("---------------MACHINES STATS--------------------------\n",file=debug_file)
+    for machine in machines_list:
+        cur_job_list = machine.retrieveJobsList()
+        print("machine # ", machine.number, "assigned jobs #:",file=debug_file)
+        l = []
+        for job in cur_job_list:
+            l.append(job)
+        print("".join(str(l)),file=debug_file)
+
+        print("Types: ", machine.types, "Makespan : ", machine.span,file=debug_file)
+    print("Total makespan is : ",finalMakeSpan(),file=debug_file)
+    print("------------------------------------------------\n",file=debug_file)
+
+def printMachineStatConsole():
     print("---------------MACHINES STATS--------------------------\n")
     for machine in machines_list:
         cur_job_list = machine.retrieveJobsList()
@@ -243,8 +284,12 @@ def printMachineStat():
         print("".join(str(l)))
 
         print("Types: ", machine.types, "Makespan : ", machine.span)
-
+    print("Total makespan is : ",finalMakeSpan())
     print("------------------------------------------------\n")
+
+
+
+
 
 
 initialAssign()
@@ -273,6 +318,95 @@ def removeAllJobs():
 
 
 print(machines_list[0].isLegal())
+
+
+
+# A method for moving a job
+# parameters: origin machine , a single job to move , a target machine
+# returns : True if successful , else False
+# TODO: needs to decide if I want the jobs to move parma to be numbers or objects
+# TODO: return what ? should I return a number telling how many jobs moved successfully ? or maybe return list of unsuccessfull ?
+# TODO: EXTEND TO MOVE MORE THAN ONE JOB AT A TIME
+def moveJob(origin_machine: Machine, target_machine: Machine , job_to_move):
+    if target_machine.checkDiffTypes() < 3:
+        cur_job = origin_machine.retrieveJob(job_to_move)
+        origin_machine.removeJob(job_to_move)
+        target_machine.addJob(cur_job)
+        # print("moved job #",job_to_move,"from ",origin_machine,"to ",target_machine,file=debug_file)
+        return True
+    else:
+        return False
+
+
+# Check if a move is at least as good as current state .
+def checkMoveSpan(origin_machine: Machine, target_machine: Machine , job_to_move):
+    cur_span = finalMakeSpan()
+    origin_span = origin_machine.span
+    target_span = target_machine.span
+    job_span = jobs_list[job_to_move].length
+    if cur_span == target_span:
+        return False # assuming job length is at least 1 , it won't be good to move to that machine, which is already at max span
+    elif cur_span > target_span + job_span:
+        return True
+    else:
+        return False
+
+
+def isLegalMove(target_machine: Machine, job:Job):
+    if target_machine.checkDiffTypes() < 3:
+        return True    # we surely have free space so no further checking is needed
+    else:    # check if the kinds we do have is of the same as new job
+        if job.type in target_machine.getTypes():
+            return True
+        else:
+            return False
+
+
+# if all done return True, else return False
+def isDone(d_list):
+    return all(item is False for item in d_list)
+
+
+# TODO: writh a target function
+def localSearch():
+    done = False
+    while not done:
+        done_list = [False] * num_of_machines  # for checking if at least one job has moved in the last machine iteration
+
+        for index, machine in enumerate(machines_list):
+            for job_number,job in machine.assigned_jobs.copy().items():
+                moved = False
+                for i in range(1, num_of_machines):
+                    if isLegalMove(machines_list[(machine.number+i) % num_of_machines], job):
+                        move_or_not_to_move = checkMoveSpan(machine,
+                                                            machines_list[(machine.number+i) % num_of_machines],
+                                                            job_number)
+                        if move_or_not_to_move is True:
+                            moved = moveJob(machine, machines_list[(machine.number+i) % num_of_machines], job_number)
+                            if moved is True:
+                                if done_list[machine.number] is False:
+                                    done_list[machine.number] = True
+                            break
+                # if moved == True:
+                #     break
+            printMachineStat()
+            # printMachineStatConsole()
+            if isDone(done_list):
+                done = True
+                break
+            # if index == 4 and moved is False:
+            #     done = True
+            # else:
+            #     break
+    print("im out of the while!")
+
+
+
+
+
+
+
+localSearch()
 
 
 
