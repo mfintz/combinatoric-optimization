@@ -1,4 +1,8 @@
 from random import randint
+import time
+
+
+start = time.time()
 
 
 # Constants
@@ -15,7 +19,10 @@ out_file = open("out.txt","w")
 def handleInput():
     if input("Would you like to generate a new input file? Y/N\n") == "Y":
         num_of_machines = int(input("Please enter the number of machines: \n"))
+        min_processing_time = int(input("Please enter the minimum processing time for a single job: \n"))
         max_processing_time = int(input("Please enter the maximum processing time for a single job: \n"))
+        num_of_jobs = int(input("Please enter the number of jobs: \n"))
+
         print("max process time is :", max_processing_time)
 
 
@@ -32,14 +39,14 @@ def handleInput():
         inpt.write(str(num_of_machines))
         inpt.write("\n")
 
-        # Generate random number of jobs
-        num_of_jobs = randint(MIN_NUM_OF_JOBS,MAX_NUM_OF_JOBS)
+        # # Generate random number of jobs
+        # num_of_jobs = randint(MIN_NUM_OF_JOBS,MAX_NUM_OF_JOBS)
         print("number of jobs generated: ", num_of_jobs)
         jobs = []
         for index in range(0,num_of_jobs):
             j = []
             j.append(index)
-            job_size = randint(1,int(max_processing_time))
+            job_size = randint(min_processing_time,int(max_processing_time))
             j.append(job_size)
             type = randint(1,NUM_OF_TYPES)
             j.append(type)
@@ -119,9 +126,10 @@ class Machine(object):
     def __init__(self, num):
         # self.assigned_jobs = [] #TODO: maybe switch to dictionary
         self.assigned_jobs = {}
-        self.number = num # Machine serial #
+        self.number = num    # Machine serial #
         self.span = 0   # Initial makespan
-        self.types = [0]*5    # Histogram of size 5 - to count each type assigned to the machine
+        self.types = [0]*NUM_OF_TYPES    # Histogram of size 5 - to count each type assigned to the machine
+        self.types_sums = [0]*num_of_machines
 
 
 
@@ -150,9 +158,11 @@ class Machine(object):
         return self.assigned_jobs
 
     def addJob(self, job):
+        job_type = job.getType()-1
         self.assigned_jobs[job.getNumber()] = job
         self.span += job.getLength()
-        self.types[job.getType()-1] = self.types[job.getType()-1] + 1
+        self.types[job_type] = self.types[job_type] + 1
+        self.types_sums[job_type] = self.types_sums[job_type] + job.length
         job.in_machine = self.number
 
 
@@ -164,9 +174,11 @@ class Machine(object):
     # removing job from the machine by job number
     def removeJob(self, job_number):
         job = self.retrieveJob(job_number)
+        job_type = job.getType()-1
         del (self.assigned_jobs[job_number])
         self.span -= job.getLength()
-        self.types[job.getType()-1] = self.types[job.getType()-1] - 1
+        self.types[job_type] = self.types[job_type] - 1
+        self.types_sums[job_type] = self.types_sums[job_type] - job.length
         job.in_machine = -1
 
     # def makeSpan(self):
@@ -282,8 +294,8 @@ def printMachineStat():
 
 
 
-def printMachineStatOut():
-    print("---------------MACHINES STATS--------------------------\n", file=out_file)
+def printMachineStatOut(action):
+    print("---------------MACHINES STATS # %s %s--------------------------\n" % (printMachineStatOut.out_stat_counter , action), file=out_file)
     for machine in machines_list:
         cur_job_list = machine.retrieveJobsList()
         print("machine number ", machine.number, "assigned jobs [number,length,type]:", file=out_file)
@@ -293,11 +305,12 @@ def printMachineStatOut():
         print("".join(str(l)), file=out_file)
 
         print("Assigned types: ", machine.getTypes(), file=out_file)
-        print("Types histogram: ", machine.types, "Makespan : ", machine.span, file=out_file)
+        print("Types histogram: ", machine.types,"Sum of each type: ", machine.types_sums , "Makespan : ", machine.span, file=out_file)
         print("\n", file=out_file)
-    print("Total makespan is : ",finalMakeSpan(), file=out_file)
+    print("Max makespan is : ",finalMakeSpan(), file=out_file)
     print("------------------------------------------------\n", file=out_file)
-
+    printMachineStatOut.out_stat_counter = printMachineStatOut.out_stat_counter + 1
+printMachineStatOut.out_stat_counter = 0
 
 
 
@@ -312,9 +325,8 @@ def printMachineStatConsole():
         print("".join(str(l)))
 
         print("Types: ", machine.types, "Makespan : ", machine.span)
-    print("Total makespan is : ",finalMakeSpan())
+    print("Max makespan is : ",finalMakeSpan())
     print("------------------------------------------------\n")
-
 
 
 
@@ -366,16 +378,33 @@ def moveJob(origin_machine: Machine, target_machine: Machine , job_to_move):
         return False
 
 
-# Check if a move is at least as good as current state .
-def checkMoveSpan(origin_machine: Machine, target_machine: Machine , job_to_move):
+
+
+
+# Swap 2 jobs from origin to target
+def swapJobs(origin_machine: Machine, target_machine: Machine , origin_job, target_job):
+    if target_machine.checkDiffTypes() <= 3:
+        temp = origin_machine.retrieveJob(origin_job)
+        origin_machine.removeJob(origin_job)
+        target_machine.addJob(temp)
+        temp = target_machine.retrieveJob(target_job)
+        target_machine.removeJob(target_job)
+        origin_machine.addJob(temp)
+        return True
+    else:
+        return False
+
+
+def checkSwapSpan(origin_machine: Machine, target_machine: Machine , origin_job, target_job):
     cur_span = finalMakeSpan()
     origin_span = origin_machine.span
     target_span = target_machine.span
-    job_span = jobs_list[job_to_move].length
-    if cur_span == target_span:
-        return False # assuming job length is at least 1 , it won't be good to move to that machine, which is already at max span
-    elif cur_span > target_span + job_span:    # by moving the job we won't exceed the current max span
-        if target_span + job_span < origin_span - job_span:    # if still making an improvement
+    local_max_span = max(origin_span, target_span)
+    origin_job_span = jobs_list[origin_job].length
+    target_job_span = jobs_list[target_job].length
+    new_local_max_span = max(origin_span - origin_job_span + target_job_span, target_span - target_job_span + origin_job_span)
+    if new_local_max_span < cur_span:   # by swapping the jobs we won't exceed the current makespan
+        if new_local_max_span < local_max_span:
             return True
         else:
             return False
@@ -383,14 +412,112 @@ def checkMoveSpan(origin_machine: Machine, target_machine: Machine , job_to_move
         return False
 
 
-def isLegalMove(target_machine: Machine, job:Job):
-    check = target_machine.checkDiffTypes()
+
+# Check if a move is at least as good as current state .
+def checkMoveSpan(origin_machine: Machine, target_machine: Machine, job_to_move):
+    cur_span = finalMakeSpan()
+    origin_span = origin_machine.span
+    target_span = target_machine.span
+    local_max_span = max(origin_span, target_span)
+    job_span = jobs_list[job_to_move].length
+    new_local_max_span = max(origin_span - job_span, target_span + job_span)
+    if cur_span == target_span:
+        return False  # assuming job length is at least 1 , it won't be good to move to that machine, which is already at max span
+    elif cur_span > target_span + job_span:  # by moving the job we won't exceed the current max span
+        if new_local_max_span < local_max_span:  # if still making an improvement
+            return True
+        else:
+            return False
+    else:
+        return False
+
+
+def moveColor(origin_machine: Machine,target_machine: Machine, color_to_move):
+    jobs = []
+    for key,val in origin_machine.assigned_jobs.copy().items():
+        if val.type == color_to_move:
+           if moveJob(origin_machine,target_machine, val.number) == False:
+               return False
+
+    return True    #something failed
+
+
+
+def checkColorChangeSpan(origin_machine: Machine, target_machine: Machine, color_to_move):
+    cur_span = finalMakeSpan()
+    origin_span = origin_machine.span
+    target_span = target_machine.span
+
+    if cur_span == target_span:
+        return False
+    elif cur_span > target_span + origin_machine.types_sums[color_to_move-1]:
+        return True
+    else:
+        return False
+
+
+
+
+def isLegalMove(target_machine: Machine, job_type):
+    check = target_machine.checkDiffTypes()    # count how many diff types we have on target machine
     if check < 3:
         return True    # we surely have free space so no further checking is needed
-    elif check == 3 and job.type in target_machine.getTypes():    # check if the kinds we do have is of the same as new job
+    elif check == 3 and job_type in target_machine.getTypes():    # check if the kinds we do have is of the same as new job
             return True
     else:    # might be a mistake - but still check so we don't have more than 3 types
         return False
+
+
+
+
+
+def howManyTypes(type_hist):
+    count = 0
+    for t in type_hist:
+        if t > 0:
+            count = count + 1
+    return count
+
+
+# simulate how many types will be at each machine after swapping
+def swapSim(origin_machine: Machine, target_machine: Machine, origin_job_type, target_job_type):
+    origin_type_hist = origin_machine.types.copy()
+    target_type_hist = target_machine.types.copy()
+
+    # simulate removing of the jobs
+    origin_type_hist[origin_job_type-1] = origin_type_hist[origin_job_type-1] - 1
+    target_type_hist[target_job_type-1] = target_type_hist[target_job_type-1] - 1
+
+    # simulate adding of the jobs
+    origin_type_hist[target_job_type-1] = origin_type_hist[target_job_type-1] + 1
+    target_type_hist[origin_job_type-1] = target_type_hist[origin_job_type-1] + 1
+
+    # calculate the new different types count
+    types_in_origin = howManyTypes(origin_type_hist)
+    types_in_target = howManyTypes(target_type_hist)
+
+
+    return types_in_origin, types_in_target
+
+def isLegalSwap(origin_machine: Machine, target_machine: Machine , origin_job_type, target_job_type):
+    origin_type_count = origin_machine.checkDiffTypes()
+    target_type_count = target_machine.checkDiffTypes()
+
+    if origin_type_count < 3 and target_type_count < 3:
+        return True    # we surely have free space so no further checking is needed
+    else:   # at least one of the machines has less than 3 types
+        new_origin_count, new_target_count = swapSim(origin_machine, target_machine, origin_job_type, target_job_type)
+        if origin_type_count < 3 and target_type_count == 3:
+            if new_target_count <= 3:
+                return True
+        if origin_type_count == 3 and target_type_count < 3:
+            if new_origin_count <= 3:
+                return True
+    return False
+
+
+
+
 
 
 # if all done return True, else return False
@@ -401,51 +528,162 @@ def isDone(d_list):
 # def isSpanDone(s_list):
 
 
-# TODO: writh a target function
-def localSearch():
-    printMachineStatOut()
+
+def oneJobRoutine():
     done = False
-    # span_not_changed = 0  # count how many loops the span hasn't changed
     while not done:
         prev_makespan = finalMakeSpan()
 
         done_list = [False] * num_of_machines  # for checking if at least one job has moved in the last machine iteration
-        # span_not_changed = 0    # count how many loops the span hasn't changed
         for index, machine in enumerate(machines_list):
-            machie_span_at_loop_start = machine.span
-            for job_number,job in machine.assigned_jobs.copy().items():
-                # moved = False
+            for job_number, job in machine.assigned_jobs.copy().items():
                 for i in range(1, num_of_machines):
-                    if isLegalMove(machines_list[(machine.number+i) % num_of_machines], job):
+                    if isLegalMove(machines_list[(machine.number + i) % num_of_machines], job.type):
                         move_or_not_to_move = checkMoveSpan(machine,
-                                                            machines_list[(machine.number+i) % num_of_machines],
+                                                            machines_list[(machine.number + i) % num_of_machines],
                                                             job_number)
                         if move_or_not_to_move is True:
-                            moved = moveJob(machine, machines_list[(machine.number+i) % num_of_machines], job_number)
+                            moved = moveJob(machine, machines_list[(machine.number + i) % num_of_machines], job_number)
                             if moved is True:
                                 if done_list[machine.number] is False:
                                     done_list[machine.number] = True
                             break
-                # if moved == True:
-                #     break
+
             # printMachineStat()
-            printMachineStatOut()
+            printMachineStatOut("Moving one job")
             # printMachineStatConsole()
             if prev_makespan > finalMakeSpan():
-                print("makespan: ",finalMakeSpan(),file=debug_file)
+                print("makespan: ", finalMakeSpan(), file=debug_file)
                 prev_makespan = finalMakeSpan()
-            # if machie_span_at_loop_start < machine.span:
-            #     span_not_changed = span_not_changed + 1
-            # else:
-            #     span_not_changed = 0
+
+            if printMachineStatOut.out_stat_counter == 20:
+                print("its a trap!")
             if isDone(done_list):
-                    done = True
-                    break
-            # if index == 4 and moved is False:
+                done = True
+                break
+
+
+
+def colorChangeRoutine():
+    done = False
+    # check changing of whole color
+    while not done:
+        prev_makespan = finalMakeSpan()
+
+        done_list = [False] * num_of_machines  # for checking if at least one job has moved in the last machine iteration
+        for index, machine in enumerate(machines_list):
+            color_list = machine.getTypes()
+
+            for color in color_list:
+                for i in range(1, num_of_machines):
+                    if isLegalMove(machines_list[(machine.number + i) % num_of_machines], color):
+                        move_or_not_to_move = checkColorChangeSpan(machine,
+                                                                   machines_list[
+                                                                       (machine.number + i) % num_of_machines],
+                                                                   color)
+                        if move_or_not_to_move is True:
+                            moved = moveColor(machine, machines_list[(machine.number + i) % num_of_machines], color)
+                            if moved is True:
+                                if done_list[machine.number] is False:
+                                    done_list[machine.number] = True
+                            break
+
+            # printMachineStat()
+            printMachineStatOut("Color Change")
+            # printMachineStatConsole()
+            if prev_makespan > finalMakeSpan():
+                print("makespan: ", finalMakeSpan(), file=debug_file)
+                prev_makespan = finalMakeSpan()
+
+            if printMachineStatOut.out_stat_counter == 20:
+                print("its a trap!")
+            if isDone(done_list):
+                done = True
+                break
+
+
+
+
+def oneByOneSwapRoutine():
+    done = False
+    while not done:
+        # TODO: remove
+        if time.time() > start + 300:
+            break
+
+
+        prev_makespan = finalMakeSpan()
+        no_swap_count = len(jobs_list)
+        done_list = [False] * num_of_machines  # for checking if at least one job has moved in the last machine iteration
+        for index, machine in enumerate(machines_list):    # origin machine
+            # if index == 1:
+            #     print("trapdebug")
+            for job_number, job in machine.assigned_jobs.copy().items():    # origin job
+                move_at_least_once = False
+                for i in range(1, num_of_machines):
+                    target_machine = machines_list[(machine.number + i) % num_of_machines]
+                    for target_job_number, target_job in target_machine.assigned_jobs.copy().items():
+                        moved = False
+                        if isLegalSwap(machine, target_machine, job.type, target_job.type):    # check if origin machine can accept target job and if target machine can accept origin job
+                            move_or_not_to_move = checkSwapSpan(machine,
+                                                                target_machine,
+                                                                job_number, target_job_number)
+
+                            if move_or_not_to_move is True:
+                                moved = swapJobs(machine, target_machine, job_number, target_job_number)
+                                move_at_least_once = True
+                                if moved is True:
+                                    break
+
+                if move_at_least_once is False:
+                    no_swap_count = no_swap_count - 1
+                    # if done_list[machine.number] is False:
+                    #     done_list[machine.number] = True
+
+
+            # printMachineStat()
+            printMachineStatOut("Swapping jobs 1 by 1 with 2 machine")
+            # printMachineStatConsole()
+            if prev_makespan > finalMakeSpan():
+                print("makespan: ", finalMakeSpan(), file=debug_file)
+                prev_makespan = finalMakeSpan()
+
+            # if printMachineStatOut.out_stat_counter == 20:
+            #     print("its a trap!")
+        if no_swap_count == 0:
+            done = True
+            break
+            # if isDone(done_list):
             #     done = True
-            # else:
             #     break
-    print("im out of the while!")
+
+
+
+
+
+# TODO: writh a target function
+def localSearch():
+    printMachineStatOut("Initial state")
+
+    # oneByOneSwapRoutine()
+    # oneJobRoutine()
+    # colorChangeRoutine()
+    prev = finalMakeSpan()
+    while 1:
+
+        oneJobRoutine()
+        oneByOneSwapRoutine()
+
+        colorChangeRoutine()
+
+
+        if finalMakeSpan() < prev:
+            prev = finalMakeSpan()
+        else:
+            break
+
+
+
 
 
 
