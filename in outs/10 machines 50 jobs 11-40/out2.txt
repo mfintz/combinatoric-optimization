@@ -1,0 +1,4225 @@
+---------------MACHINES STATS # 0 Initial state--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[0, 21, 3], [1, 18, 2], [3, 28, 2], [5, 21, 1], [7, 31, 2], [8, 25, 1], [9, 24, 3], [10, 15, 2], [13, 17, 2], [14, 39, 2], [19, 16, 1], [20, 15, 1], [21, 28, 3], [22, 16, 1], [23, 17, 3], [24, 21, 2], [25, 11, 1], [29, 11, 3], [31, 19, 1], [32, 26, 3], [33, 15, 2], [36, 31, 2], [37, 39, 2], [39, 39, 2], [40, 40, 2], [43, 24, 1], [45, 32, 1], [46, 28, 3], [49, 36, 2]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [9, 13, 7, 0, 0] Sum of each type:  [179, 369, 155, 0, 0, 0, 0, 0, 0, 0] Makespan :  703
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[48, 38, 4], [2, 23, 4], [35, 19, 5], [4, 22, 5], [38, 25, 4], [6, 31, 4], [41, 25, 4], [42, 34, 4], [11, 26, 5], [12, 22, 4], [34, 20, 5], [47, 34, 4], [15, 31, 4], [16, 14, 4], [17, 32, 4], [18, 20, 4], [26, 26, 5], [27, 33, 5], [28, 30, 5], [44, 29, 5], [30, 25, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 13, 8] Sum of each type:  [0, 0, 0, 354, 205, 0, 0, 0, 0, 0] Makespan :  559
+
+
+machine number  2 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  3 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  4 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  5 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  6 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  7 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  8 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  9 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+Max makespan is :  703
+------------------------------------------------
+
+---------------MACHINES STATS # 1 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[49, 36, 2]]
+Assigned types:  [2]
+Types histogram:  [0, 1, 0, 0, 0] Sum of each type:  [0, 36, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  36
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[0, 21, 3], [2, 23, 4], [4, 22, 5], [6, 31, 4], [11, 26, 5], [12, 22, 4], [15, 31, 4], [16, 14, 4], [17, 32, 4], [18, 20, 4], [26, 26, 5], [27, 33, 5], [28, 30, 5], [30, 25, 4], [34, 20, 5], [35, 19, 5], [38, 25, 4], [41, 25, 4], [42, 34, 4], [44, 29, 5], [47, 34, 4], [48, 38, 4]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 13, 8] Sum of each type:  [0, 0, 21, 354, 205, 0, 0, 0, 0, 0] Makespan :  580
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[1, 18, 2], [3, 28, 2], [5, 21, 1], [7, 31, 2], [8, 25, 1], [9, 24, 3], [10, 15, 2], [13, 17, 2], [14, 39, 2], [19, 16, 1], [20, 15, 1], [21, 28, 3], [22, 16, 1], [23, 17, 3], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [6, 7, 3, 0, 0] Sum of each type:  [104, 169, 69, 0, 0, 0, 0, 0, 0, 0] Makespan :  342
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[32, 26, 3], [33, 15, 2], [36, 31, 2], [37, 39, 2], [39, 39, 2], [29, 11, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 4, 2, 0, 0] Sum of each type:  [19, 124, 37, 0, 0, 0, 0, 0, 0, 0] Makespan :  180
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[40, 40, 2], [43, 24, 1]]
+Assigned types:  [1, 2]
+Types histogram:  [1, 1, 0, 0, 0] Sum of each type:  [24, 40, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  64
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[45, 32, 1], [46, 28, 3]]
+Assigned types:  [1, 3]
+Types histogram:  [1, 0, 1, 0, 0] Sum of each type:  [32, 0, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  60
+
+
+machine number  6 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  7 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  8 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  9 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+Max makespan is :  580
+------------------------------------------------
+
+---------------MACHINES STATS # 2 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[49, 36, 2]]
+Assigned types:  [2]
+Types histogram:  [0, 1, 0, 0, 0] Sum of each type:  [0, 36, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  36
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[48, 38, 4]]
+Assigned types:  [4]
+Types histogram:  [0, 0, 0, 1, 0] Sum of each type:  [0, 0, 0, 38, 0, 0, 0, 0, 0, 0] Makespan :  38
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[0, 21, 3], [1, 18, 2], [3, 28, 2], [5, 21, 1], [7, 31, 2], [8, 25, 1], [9, 24, 3], [10, 15, 2], [13, 17, 2], [14, 39, 2], [19, 16, 1], [20, 15, 1], [21, 28, 3], [22, 16, 1], [23, 17, 3], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [6, 7, 4, 0, 0] Sum of each type:  [104, 169, 90, 0, 0, 0, 0, 0, 0, 0] Makespan :  363
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[32, 26, 3], [33, 15, 2], [36, 31, 2], [37, 39, 2], [39, 39, 2], [29, 11, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 4, 2, 0, 0] Sum of each type:  [19, 124, 37, 0, 0, 0, 0, 0, 0, 0] Makespan :  180
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[16, 14, 4], [17, 32, 4], [2, 23, 4], [6, 31, 4], [40, 40, 2], [43, 24, 1], [12, 22, 4], [18, 20, 4], [15, 31, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 7, 0] Sum of each type:  [24, 40, 0, 173, 0, 0, 0, 0, 0, 0] Makespan :  237
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[34, 20, 5], [27, 33, 5], [4, 22, 5], [26, 26, 5], [11, 26, 5], [28, 30, 5], [45, 32, 1], [46, 28, 3]]
+Assigned types:  [1, 3, 5]
+Types histogram:  [1, 0, 1, 0, 6] Sum of each type:  [32, 0, 28, 0, 157, 0, 0, 0, 0, 0] Makespan :  217
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[41, 25, 4], [42, 34, 4], [35, 19, 5], [38, 25, 4], [30, 25, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 4, 1] Sum of each type:  [0, 0, 0, 109, 19, 0, 0, 0, 0, 0] Makespan :  128
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[44, 29, 5], [47, 34, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 1, 1] Sum of each type:  [0, 0, 0, 34, 29, 0, 0, 0, 0, 0] Makespan :  63
+
+
+machine number  8 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+machine number  9 assigned jobs [number,length,type]:
+[]
+Assigned types:  []
+Types histogram:  [0, 0, 0, 0, 0] Sum of each type:  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  0
+
+
+Max makespan is :  363
+------------------------------------------------
+
+---------------MACHINES STATS # 3 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[49, 36, 2]]
+Assigned types:  [2]
+Types histogram:  [0, 1, 0, 0, 0] Sum of each type:  [0, 36, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  36
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[48, 38, 4]]
+Assigned types:  [4]
+Types histogram:  [0, 0, 0, 1, 0] Sum of each type:  [0, 0, 0, 38, 0, 0, 0, 0, 0, 0] Makespan :  38
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2]
+Types histogram:  [1, 1, 0, 0, 0] Sum of each type:  [11, 21, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  32
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[32, 26, 3], [33, 15, 2], [3, 28, 2], [36, 31, 2], [37, 39, 2], [0, 21, 3], [39, 39, 2], [1, 18, 2], [5, 21, 1], [29, 11, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 6, 3, 0, 0] Sum of each type:  [40, 170, 58, 0, 0, 0, 0, 0, 0, 0] Makespan :  268
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[16, 14, 4], [17, 32, 4], [2, 23, 4], [6, 31, 4], [7, 31, 2], [40, 40, 2], [43, 24, 1], [12, 22, 4], [18, 20, 4], [15, 31, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 2, 0, 7, 0] Sum of each type:  [24, 71, 0, 173, 0, 0, 0, 0, 0, 0] Makespan :  268
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[34, 20, 5], [27, 33, 5], [4, 22, 5], [8, 25, 1], [26, 26, 5], [11, 26, 5], [28, 30, 5], [45, 32, 1], [46, 28, 3]]
+Assigned types:  [1, 3, 5]
+Types histogram:  [2, 0, 1, 0, 6] Sum of each type:  [57, 0, 28, 0, 157, 0, 0, 0, 0, 0] Makespan :  242
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[35, 19, 5], [38, 25, 4], [9, 24, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 4, 1] Sum of each type:  [0, 0, 24, 109, 19, 0, 0, 0, 0, 0] Makespan :  152
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[10, 15, 2], [44, 29, 5], [13, 17, 2], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 3, 0, 1, 1] Sum of each type:  [0, 71, 0, 34, 29, 0, 0, 0, 0, 0] Makespan :  134
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[19, 16, 1], [20, 15, 1], [21, 28, 3]]
+Assigned types:  [1, 3]
+Types histogram:  [2, 0, 1, 0, 0] Sum of each type:  [31, 0, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  59
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[22, 16, 1], [23, 17, 3]]
+Assigned types:  [1, 3]
+Types histogram:  [1, 0, 1, 0, 0] Sum of each type:  [16, 0, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  33
+
+
+Max makespan is :  268
+------------------------------------------------
+
+---------------MACHINES STATS # 4 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [49, 36, 2]]
+Assigned types:  [2]
+Types histogram:  [0, 2, 0, 0, 0] Sum of each type:  [0, 54, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  54
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[29, 11, 3], [48, 38, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 1, 1, 0] Sum of each type:  [0, 0, 11, 38, 0, 0, 0, 0, 0, 0] Makespan :  49
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2]
+Types histogram:  [1, 1, 0, 0, 0] Sum of each type:  [11, 21, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  32
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [31, 19, 1]]
+Assigned types:  [1]
+Types histogram:  [2, 0, 0, 0, 0] Sum of each type:  [40, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  40
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[16, 14, 4], [17, 32, 4], [2, 23, 4], [6, 31, 4], [7, 31, 2], [40, 40, 2], [43, 24, 1], [12, 22, 4], [18, 20, 4], [15, 31, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 2, 0, 7, 0] Sum of each type:  [24, 71, 0, 173, 0, 0, 0, 0, 0, 0] Makespan :  268
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[34, 20, 5], [27, 33, 5], [4, 22, 5], [8, 25, 1], [26, 26, 5], [11, 26, 5], [28, 30, 5], [45, 32, 1], [46, 28, 3]]
+Assigned types:  [1, 3, 5]
+Types histogram:  [2, 0, 1, 0, 6] Sum of each type:  [57, 0, 28, 0, 157, 0, 0, 0, 0, 0] Makespan :  242
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [35, 19, 5], [38, 25, 4], [9, 24, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 2, 4, 1] Sum of each type:  [0, 0, 50, 109, 19, 0, 0, 0, 0, 0] Makespan :  178
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[33, 15, 2], [3, 28, 2], [10, 15, 2], [44, 29, 5], [13, 17, 2], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 5, 0, 1, 1] Sum of each type:  [0, 114, 0, 34, 29, 0, 0, 0, 0, 0] Makespan :  177
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [19, 16, 1], [20, 15, 1], [21, 28, 3], [37, 39, 2]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 2, 1, 0, 0] Sum of each type:  [31, 70, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  129
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[0, 21, 3], [39, 39, 2], [22, 16, 1], [23, 17, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 1, 2, 0, 0] Sum of each type:  [16, 39, 38, 0, 0, 0, 0, 0, 0, 0] Makespan :  93
+
+
+Max makespan is :  268
+------------------------------------------------
+
+---------------MACHINES STATS # 5 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [12, 22, 4], [49, 36, 2]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 1, 0] Sum of each type:  [0, 54, 0, 22, 0, 0, 0, 0, 0, 0] Makespan :  76
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [29, 11, 3], [48, 38, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 1, 2, 0] Sum of each type:  [0, 0, 11, 69, 0, 0, 0, 0, 0, 0] Makespan :  80
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 1, 0] Sum of each type:  [11, 21, 0, 14, 0, 0, 0, 0, 0, 0] Makespan :  46
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [31, 19, 1]]
+Assigned types:  [1]
+Types histogram:  [2, 0, 0, 0, 0] Sum of each type:  [40, 0, 0, 0, 0, 0, 0, 0, 0, 0] Makespan :  40
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[17, 32, 4], [18, 20, 4]]
+Assigned types:  [4]
+Types histogram:  [0, 0, 0, 2, 0] Sum of each type:  [0, 0, 0, 52, 0, 0, 0, 0, 0, 0] Makespan :  52
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[34, 20, 5], [27, 33, 5], [4, 22, 5], [8, 25, 1], [26, 26, 5], [11, 26, 5], [28, 30, 5], [45, 32, 1], [46, 28, 3]]
+Assigned types:  [1, 3, 5]
+Types histogram:  [2, 0, 1, 0, 6] Sum of each type:  [57, 0, 28, 0, 157, 0, 0, 0, 0, 0] Makespan :  242
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [2, 23, 4], [35, 19, 5], [6, 31, 4], [38, 25, 4], [9, 24, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 2, 6, 1] Sum of each type:  [0, 0, 50, 163, 19, 0, 0, 0, 0, 0] Makespan :  232
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[33, 15, 2], [3, 28, 2], [7, 31, 2], [10, 15, 2], [44, 29, 5], [13, 17, 2], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 6, 0, 1, 1] Sum of each type:  [0, 145, 0, 34, 29, 0, 0, 0, 0, 0] Makespan :  208
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[19, 16, 1], [36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [37, 39, 2]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [31, 110, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  169
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[0, 21, 3], [43, 24, 1], [39, 39, 2], [22, 16, 1], [23, 17, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 39, 38, 0, 0, 0, 0, 0, 0, 0] Makespan :  117
+
+
+Max makespan is :  242
+------------------------------------------------
+
+---------------MACHINES STATS # 6 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [4, 22, 5], [11, 26, 5], [12, 22, 4], [49, 36, 2]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 54, 0, 22, 48, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [29, 11, 3], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [1, 0, 1, 2, 0] Sum of each type:  [32, 0, 11, 69, 0, 0, 0, 0, 0, 0] Makespan :  112
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 1, 0] Sum of each type:  [11, 21, 0, 14, 0, 0, 0, 0, 0, 0] Makespan :  46
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 3]
+Types histogram:  [2, 0, 1, 0, 0] Sum of each type:  [40, 0, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  68
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[17, 32, 4], [26, 26, 5], [18, 20, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 2, 1] Sum of each type:  [0, 0, 0, 52, 26, 0, 0, 0, 0, 0] Makespan :  78
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[27, 33, 5], [28, 30, 5]]
+Assigned types:  [5]
+Types histogram:  [0, 0, 0, 0, 2] Sum of each type:  [0, 0, 0, 0, 63, 0, 0, 0, 0, 0] Makespan :  63
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [2, 23, 4], [35, 19, 5], [6, 31, 4], [38, 25, 4], [9, 24, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 2, 6, 1] Sum of each type:  [0, 0, 50, 163, 19, 0, 0, 0, 0, 0] Makespan :  232
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[33, 15, 2], [34, 20, 5], [3, 28, 2], [7, 31, 2], [10, 15, 2], [44, 29, 5], [13, 17, 2], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 6, 0, 1, 2] Sum of each type:  [0, 145, 0, 34, 49, 0, 0, 0, 0, 0] Makespan :  228
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[8, 25, 1], [19, 16, 1], [36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [37, 39, 2]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [3, 3, 1, 0, 0] Sum of each type:  [56, 110, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  194
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[0, 21, 3], [43, 24, 1], [39, 39, 2], [22, 16, 1], [23, 17, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 39, 38, 0, 0, 0, 0, 0, 0, 0] Makespan :  117
+
+
+Max makespan is :  232
+------------------------------------------------
+
+---------------MACHINES STATS # 7 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [2, 23, 4], [4, 22, 5], [11, 26, 5], [12, 22, 4], [35, 19, 5], [49, 36, 2]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 2, 3] Sum of each type:  [0, 54, 0, 45, 67, 0, 0, 0, 0, 0] Makespan :  166
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [29, 11, 3], [38, 25, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [1, 0, 1, 3, 0] Sum of each type:  [32, 0, 11, 94, 0, 0, 0, 0, 0, 0] Makespan :  137
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 2, 0] Sum of each type:  [11, 21, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  77
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [9, 24, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 3]
+Types histogram:  [2, 0, 2, 0, 0] Sum of each type:  [40, 0, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  92
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[17, 32, 4], [26, 26, 5], [18, 20, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 2, 1] Sum of each type:  [0, 0, 0, 52, 26, 0, 0, 0, 0, 0] Makespan :  78
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[27, 33, 5], [28, 30, 5]]
+Assigned types:  [5]
+Types histogram:  [0, 0, 0, 0, 2] Sum of each type:  [0, 0, 0, 0, 63, 0, 0, 0, 0, 0] Makespan :  63
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [4]
+Types histogram:  [0, 0, 0, 3, 0] Sum of each type:  [0, 0, 0, 84, 0, 0, 0, 0, 0, 0] Makespan :  84
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[33, 15, 2], [34, 20, 5], [3, 28, 2], [7, 31, 2], [10, 15, 2], [44, 29, 5], [13, 17, 2], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 6, 0, 1, 2] Sum of each type:  [0, 145, 0, 34, 49, 0, 0, 0, 0, 0] Makespan :  228
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[32, 26, 3], [8, 25, 1], [19, 16, 1], [36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [37, 39, 2]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [3, 3, 2, 0, 0] Sum of each type:  [56, 110, 54, 0, 0, 0, 0, 0, 0, 0] Makespan :  220
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[0, 21, 3], [43, 24, 1], [39, 39, 2], [22, 16, 1], [23, 17, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 39, 38, 0, 0, 0, 0, 0, 0, 0] Makespan :  117
+
+
+Max makespan is :  228
+------------------------------------------------
+
+---------------MACHINES STATS # 8 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [2, 23, 4], [4, 22, 5], [11, 26, 5], [12, 22, 4], [34, 20, 5], [35, 19, 5], [49, 36, 2]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 2, 4] Sum of each type:  [0, 54, 0, 45, 87, 0, 0, 0, 0, 0] Makespan :  186
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [29, 11, 3], [38, 25, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [1, 0, 1, 3, 0] Sum of each type:  [32, 0, 11, 94, 0, 0, 0, 0, 0, 0] Makespan :  137
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [10, 15, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 3, 0, 2, 0] Sum of each type:  [11, 67, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [9, 24, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 3]
+Types histogram:  [2, 0, 2, 0, 0] Sum of each type:  [40, 0, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  92
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[17, 32, 4], [26, 26, 5], [44, 29, 5], [18, 20, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 2, 2] Sum of each type:  [0, 0, 0, 52, 55, 0, 0, 0, 0, 0] Makespan :  107
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[27, 33, 5], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 1, 0, 0, 2] Sum of each type:  [0, 17, 0, 0, 63, 0, 0, 0, 0, 0] Makespan :  80
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [4]
+Types histogram:  [0, 0, 0, 3, 0] Sum of each type:  [0, 0, 0, 84, 0, 0, 0, 0, 0, 0] Makespan :  84
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 1, 0, 1, 0] Sum of each type:  [0, 39, 0, 34, 0, 0, 0, 0, 0, 0] Makespan :  73
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[32, 26, 3], [8, 25, 1], [19, 16, 1], [36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [37, 39, 2]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [3, 3, 2, 0, 0] Sum of each type:  [56, 110, 54, 0, 0, 0, 0, 0, 0, 0] Makespan :  220
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[0, 21, 3], [33, 15, 2], [3, 28, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 2, 0, 0] Sum of each type:  [40, 82, 38, 0, 0, 0, 0, 0, 0, 0] Makespan :  160
+
+
+Max makespan is :  220
+------------------------------------------------
+
+---------------MACHINES STATS # 9 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [2, 23, 4], [4, 22, 5], [11, 26, 5], [12, 22, 4], [34, 20, 5], [35, 19, 5], [49, 36, 2]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 2, 4] Sum of each type:  [0, 54, 0, 45, 87, 0, 0, 0, 0, 0] Makespan :  186
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [29, 11, 3], [38, 25, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [1, 0, 1, 3, 0] Sum of each type:  [32, 0, 11, 94, 0, 0, 0, 0, 0, 0] Makespan :  137
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [6, 31, 4], [7, 31, 2], [10, 15, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 4, 0, 2, 0] Sum of each type:  [11, 98, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  154
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [9, 24, 3], [37, 39, 2], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 39, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[17, 32, 4], [26, 26, 5], [44, 29, 5], [18, 20, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 2, 2] Sum of each type:  [0, 0, 0, 52, 55, 0, 0, 0, 0, 0] Makespan :  107
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 2] Sum of each type:  [25, 17, 0, 0, 63, 0, 0, 0, 0, 0] Makespan :  105
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [4]
+Types histogram:  [0, 0, 0, 3, 0] Sum of each type:  [0, 0, 0, 84, 0, 0, 0, 0, 0, 0] Makespan :  84
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 1, 0] Sum of each type:  [16, 39, 0, 34, 0, 0, 0, 0, 0, 0] Makespan :  89
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 1, 1, 0, 0] Sum of each type:  [15, 40, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  83
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[0, 21, 3], [33, 15, 2], [3, 28, 2], [32, 26, 3], [22, 16, 1], [39, 39, 2], [23, 17, 3], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 3, 0, 0] Sum of each type:  [40, 82, 64, 0, 0, 0, 0, 0, 0, 0] Makespan :  186
+
+
+Max makespan is :  186
+------------------------------------------------
+
+---------------MACHINES STATS # 10 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [2, 23, 4], [4, 22, 5], [11, 26, 5], [12, 22, 4], [34, 20, 5], [35, 19, 5], [49, 36, 2]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 2, 4] Sum of each type:  [0, 54, 0, 45, 87, 0, 0, 0, 0, 0] Makespan :  186
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[0, 21, 3], [15, 31, 4], [29, 11, 3], [38, 25, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [1, 0, 2, 3, 0] Sum of each type:  [32, 0, 32, 94, 0, 0, 0, 0, 0, 0] Makespan :  158
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [6, 31, 4], [7, 31, 2], [10, 15, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 4, 0, 2, 0] Sum of each type:  [11, 98, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  154
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[33, 15, 2], [5, 21, 1], [9, 24, 3], [37, 39, 2], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 2, 2, 0, 0] Sum of each type:  [40, 54, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  146
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[3, 28, 2], [44, 29, 5], [17, 32, 4], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 52, 55, 0, 0, 0, 0, 0] Makespan :  135
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 2] Sum of each type:  [25, 17, 0, 0, 63, 0, 0, 0, 0, 0] Makespan :  105
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 1, 3, 0] Sum of each type:  [0, 0, 26, 84, 0, 0, 0, 0, 0, 0] Makespan :  110
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 1, 0] Sum of each type:  [16, 39, 0, 34, 0, 0, 0, 0, 0, 0] Makespan :  89
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 1, 1, 0, 0] Sum of each type:  [15, 40, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  83
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[22, 16, 1], [39, 39, 2], [23, 17, 3], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 1, 0, 0] Sum of each type:  [40, 39, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  96
+
+
+Max makespan is :  186
+------------------------------------------------
+
+---------------MACHINES STATS # 11 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 1, 0, 0, 3] Sum of each type:  [0, 36, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  104
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[0, 21, 3], [15, 31, 4], [29, 11, 3], [38, 25, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [1, 0, 2, 3, 0] Sum of each type:  [32, 0, 32, 94, 0, 0, 0, 0, 0, 0] Makespan :  158
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[1, 18, 2], [36, 31, 2], [6, 31, 4], [7, 31, 2], [10, 15, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 5, 0, 2, 0] Sum of each type:  [11, 116, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  172
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[33, 15, 2], [5, 21, 1], [9, 24, 3], [37, 39, 2], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 2, 2, 0, 0] Sum of each type:  [40, 54, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  146
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [17, 32, 4], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 2] Sum of each type:  [0, 28, 0, 75, 55, 0, 0, 0, 0, 0] Makespan :  158
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 1, 3, 0] Sum of each type:  [0, 0, 26, 84, 0, 0, 0, 0, 0, 0] Makespan :  110
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 2, 0] Sum of each type:  [16, 39, 0, 56, 0, 0, 0, 0, 0, 0] Makespan :  111
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 1, 1, 0, 0] Sum of each type:  [15, 40, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  83
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[22, 16, 1], [39, 39, 2], [23, 17, 3], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 1, 0, 0] Sum of each type:  [40, 39, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  96
+
+
+Max makespan is :  172
+------------------------------------------------
+
+---------------MACHINES STATS # 12 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 1, 0, 0, 3] Sum of each type:  [0, 36, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  104
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 2, 0] Sum of each type:  [32, 0, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  101
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[1, 18, 2], [36, 31, 2], [6, 31, 4], [7, 31, 2], [10, 15, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 5, 0, 2, 0] Sum of each type:  [11, 116, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  172
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[33, 15, 2], [5, 21, 1], [9, 24, 3], [37, 39, 2], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 2, 2, 0, 0] Sum of each type:  [40, 54, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  146
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [17, 32, 4], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 2] Sum of each type:  [0, 28, 0, 75, 55, 0, 0, 0, 0, 0] Makespan :  158
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 3, 0] Sum of each type:  [16, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  136
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[21, 28, 3], [40, 40, 2], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 1, 2, 0, 0] Sum of each type:  [15, 40, 39, 0, 0, 0, 0, 0, 0, 0] Makespan :  94
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[22, 16, 1], [39, 39, 2], [23, 17, 3], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 1, 0, 0] Sum of each type:  [40, 39, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  96
+
+
+Max makespan is :  172
+------------------------------------------------
+
+---------------MACHINES STATS # 13 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 1, 0, 0, 3] Sum of each type:  [0, 36, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  104
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 2, 0] Sum of each type:  [32, 0, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  101
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 2, 0, 2, 0] Sum of each type:  [11, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  108
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[33, 15, 2], [5, 21, 1], [1, 18, 2], [9, 24, 3], [37, 39, 2], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 2, 0, 0] Sum of each type:  [40, 72, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  164
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [17, 32, 4], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 2] Sum of each type:  [0, 28, 0, 75, 55, 0, 0, 0, 0, 0] Makespan :  158
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 3, 0] Sum of each type:  [16, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  136
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 2, 0, 0] Sum of each type:  [15, 71, 39, 0, 0, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 2, 1, 0, 0] Sum of each type:  [40, 54, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  111
+
+
+Max makespan is :  164
+------------------------------------------------
+
+---------------MACHINES STATS # 14 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 3] Sum of each type:  [0, 75, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  143
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 2, 0] Sum of each type:  [32, 0, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  101
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 2, 0, 2, 0] Sum of each type:  [11, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  108
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 18, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  110
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [17, 32, 4], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 2] Sum of each type:  [0, 28, 0, 75, 55, 0, 0, 0, 0, 0] Makespan :  158
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [33, 15, 2], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 3] Sum of each type:  [25, 32, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  139
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 3, 0] Sum of each type:  [16, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  136
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 2, 0, 0] Sum of each type:  [15, 71, 39, 0, 0, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 2, 1, 0, 0] Sum of each type:  [40, 54, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  111
+
+
+Max makespan is :  158
+------------------------------------------------
+
+---------------MACHINES STATS # 15 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 3] Sum of each type:  [0, 75, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  143
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 2, 0, 2, 0] Sum of each type:  [11, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  108
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 18, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  110
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [33, 15, 2], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 3] Sum of each type:  [25, 32, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  139
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 3, 0] Sum of each type:  [16, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  136
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 2, 0, 0] Sum of each type:  [15, 71, 39, 0, 0, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 2, 1, 0, 0] Sum of each type:  [40, 54, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  111
+
+
+Max makespan is :  143
+------------------------------------------------
+
+---------------MACHINES STATS # 16 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 3] Sum of each type:  [0, 75, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  143
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 2, 0, 2, 0] Sum of each type:  [11, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  108
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 18, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  110
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 3, 0] Sum of each type:  [16, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  136
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 2, 0, 0] Sum of each type:  [15, 71, 39, 0, 0, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  143
+------------------------------------------------
+
+---------------MACHINES STATS # 17 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 3] Sum of each type:  [0, 75, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  143
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 2, 0, 2, 0] Sum of each type:  [11, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  108
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 18, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  110
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[19, 16, 1], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 3, 0] Sum of each type:  [16, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  136
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 2, 0, 0] Sum of each type:  [15, 71, 39, 0, 0, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  143
+------------------------------------------------
+
+---------------MACHINES STATS # 18 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 3] Sum of each type:  [0, 75, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  143
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 2, 0, 0] Sum of each type:  [40, 18, 52, 0, 0, 0, 0, 0, 0, 0] Makespan :  110
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 1, 0, 3, 0] Sum of each type:  [0, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  120
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 2, 0, 0] Sum of each type:  [15, 71, 39, 0, 0, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  143
+------------------------------------------------
+
+---------------MACHINES STATS # 19 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 3] Sum of each type:  [0, 75, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  143
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 1, 0, 3, 0] Sum of each type:  [0, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  120
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  143
+------------------------------------------------
+
+---------------MACHINES STATS # 20 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [34, 20, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 3] Sum of each type:  [0, 75, 0, 0, 68, 0, 0, 0, 0, 0] Makespan :  143
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 1, 0, 3, 0] Sum of each type:  [0, 39, 0, 81, 0, 0, 0, 0, 0, 0] Makespan :  120
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  143
+------------------------------------------------
+
+---------------MACHINES STATS # 21 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 22 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 23 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 24 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 25 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 26 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 27 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 28 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 29 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 30 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 31 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[4, 22, 5], [11, 26, 5], [37, 39, 2], [49, 36, 2]]
+Assigned types:  [2, 5]
+Types histogram:  [0, 2, 0, 0, 2] Sum of each type:  [0, 75, 0, 0, 48, 0, 0, 0, 0, 0] Makespan :  123
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [48, 38, 4]]
+Assigned types:  [1, 4]
+Types histogram:  [1, 0, 0, 3, 0] Sum of each type:  [32, 0, 0, 101, 0, 0, 0, 0, 0, 0] Makespan :  133
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[6, 31, 4], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [27, 52, 0, 45, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[5, 21, 1], [1, 18, 2], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 1, 3, 0, 0] Sum of each type:  [40, 18, 63, 0, 0, 0, 0, 0, 0, 0] Makespan :  121
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [12, 22, 4], [14, 39, 2], [47, 34, 4]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 3, 1] Sum of each type:  [0, 39, 0, 81, 20, 0, 0, 0, 0, 0] Makespan :  140
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  140
+------------------------------------------------
+
+---------------MACHINES STATS # 32 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[15, 31, 4], [17, 32, 4], [45, 32, 1], [49, 36, 2]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [1, 1, 0, 2, 0] Sum of each type:  [32, 36, 0, 63, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[37, 39, 2], [7, 31, 2], [16, 14, 4], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 3, 0, 1, 0] Sum of each type:  [27, 91, 0, 14, 0, 0, 0, 0, 0, 0] Makespan :  132
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[4, 22, 5], [5, 21, 1], [9, 24, 3], [29, 11, 3], [46, 28, 3], [31, 19, 1]]
+Assigned types:  [1, 3, 5]
+Types histogram:  [2, 0, 3, 0, 1] Sum of each type:  [40, 0, 63, 0, 22, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [3, 28, 2], [44, 29, 5], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 1, 0, 2, 2] Sum of each type:  [0, 28, 0, 43, 55, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [11, 26, 5], [12, 22, 4], [47, 34, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 3, 2] Sum of each type:  [0, 0, 0, 81, 46, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  132
+------------------------------------------------
+
+---------------MACHINES STATS # 33 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[7, 31, 2], [16, 14, 4], [49, 36, 2], [19, 16, 1], [24, 21, 2], [25, 11, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 3, 0, 1, 0] Sum of each type:  [27, 88, 0, 14, 0, 0, 0, 0, 0, 0] Makespan :  129
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[45, 32, 1], [4, 22, 5], [5, 21, 1], [9, 24, 3], [29, 11, 3], [31, 19, 1]]
+Assigned types:  [1, 3, 5]
+Types histogram:  [3, 0, 2, 0, 1] Sum of each type:  [72, 0, 35, 0, 22, 0, 0, 0, 0, 0] Makespan :  129
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [44, 29, 5], [15, 31, 4], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 3, 2] Sum of each type:  [0, 0, 0, 74, 55, 0, 0, 0, 0, 0] Makespan :  129
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [27, 33, 5], [8, 25, 1], [28, 30, 5], [13, 17, 2]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 17, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [42, 34, 4], [30, 25, 4]]
+Assigned types:  [3, 4]
+Types histogram:  [0, 0, 2, 3, 0] Sum of each type:  [0, 0, 47, 84, 0, 0, 0, 0, 0, 0] Makespan :  131
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [11, 26, 5], [12, 22, 4], [47, 34, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 3, 2] Sum of each type:  [0, 0, 0, 81, 46, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[36, 31, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 71, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  114
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  131
+------------------------------------------------
+
+---------------MACHINES STATS # 34 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[45, 32, 1], [19, 16, 1], [4, 22, 5], [5, 21, 1], [9, 24, 3], [29, 11, 3]]
+Assigned types:  [1, 3, 5]
+Types histogram:  [3, 0, 2, 0, 1] Sum of each type:  [69, 0, 35, 0, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[2, 23, 4], [44, 29, 5], [15, 31, 4], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 3, 2] Sum of each type:  [0, 0, 0, 74, 55, 0, 0, 0, 0, 0] Makespan :  129
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [8, 25, 1], [24, 21, 2], [27, 33, 5], [28, 30, 5]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 1, 0, 0, 3] Sum of each type:  [25, 21, 0, 0, 82, 0, 0, 0, 0, 0] Makespan :  128
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [7, 31, 2], [41, 25, 4], [30, 25, 4]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 1, 2, 2, 0] Sum of each type:  [0, 31, 47, 50, 0, 0, 0, 0, 0, 0] Makespan :  128
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [11, 26, 5], [12, 22, 4], [47, 34, 4]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 3, 2] Sum of each type:  [0, 0, 0, 81, 46, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [21, 28, 3], [40, 40, 2], [20, 15, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [15, 76, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  119
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  129
+------------------------------------------------
+
+---------------MACHINES STATS # 35 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[2, 23, 4], [8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 57, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [44, 29, 5], [15, 31, 4], [18, 20, 4], [26, 26, 5]]
+Assigned types:  [4, 5]
+Types histogram:  [0, 0, 0, 2, 3] Sum of each type:  [0, 0, 0, 51, 77, 0, 0, 0, 0, 0] Makespan :  128
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [9, 24, 3], [24, 21, 2], [27, 33, 5], [28, 30, 5]]
+Assigned types:  [2, 3, 5]
+Types histogram:  [0, 1, 1, 0, 3] Sum of each type:  [0, 21, 24, 0, 82, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [7, 31, 2], [41, 25, 4], [30, 25, 4]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 1, 2, 2, 0] Sum of each type:  [0, 31, 47, 50, 0, 0, 0, 0, 0, 0] Makespan :  128
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [38, 25, 4], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 2, 2] Sum of each type:  [32, 0, 0, 47, 46, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [21, 28, 3], [40, 40, 2], [5, 21, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [1, 2, 1, 0, 0] Sum of each type:  [21, 76, 28, 0, 0, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  128
+------------------------------------------------
+
+---------------MACHINES STATS # 36 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[2, 23, 4], [8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 57, 0, 0, 0, 0, 0, 0] Makespan :  124
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[35, 19, 5], [9, 24, 3], [24, 21, 2], [27, 33, 5], [28, 30, 5]]
+Assigned types:  [2, 3, 5]
+Types histogram:  [0, 1, 1, 0, 3] Sum of each type:  [0, 21, 24, 0, 82, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [7, 31, 2], [41, 25, 4], [30, 25, 4]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 1, 2, 2, 0] Sum of each type:  [0, 31, 47, 50, 0, 0, 0, 0, 0, 0] Makespan :  128
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  128
+------------------------------------------------
+
+---------------MACHINES STATS # 37 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [9, 24, 3], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 2, 1, 0] Sum of each type:  [56, 0, 35, 34, 0, 0, 0, 0, 0, 0] Makespan :  125
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [41, 25, 4], [28, 30, 5], [30, 25, 4]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 2, 2, 1] Sum of each type:  [0, 0, 47, 50, 30, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 38 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 39 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 40 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 41 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 42 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 43 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 44 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 45 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 46 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 47 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 48 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 49 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 50 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 51 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 52 Color Change--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 53 Moving one job--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 54 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 55 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 56 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 57 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 58 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 59 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 60 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 61 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 62 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 63 Swapping jobs 1 by 1 with 2 machine--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
+---------------MACHINES STATS # 64 Color Change--------------------------
+
+machine number  0 assigned jobs [number,length,type]:
+[[1, 18, 2], [6, 31, 4], [14, 39, 2], [48, 38, 4]]
+Assigned types:  [2, 4]
+Types histogram:  [0, 2, 0, 2, 0] Sum of each type:  [0, 57, 0, 69, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  1 assigned jobs [number,length,type]:
+[[3, 28, 2], [17, 32, 4], [37, 39, 2], [46, 28, 3]]
+Assigned types:  [2, 3, 4]
+Types histogram:  [0, 2, 1, 1, 0] Sum of each type:  [0, 67, 28, 32, 0, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  2 assigned jobs [number,length,type]:
+[[36, 31, 2], [42, 34, 4], [13, 17, 2], [16, 14, 4], [25, 11, 1], [31, 19, 1]]
+Assigned types:  [1, 2, 4]
+Types histogram:  [2, 2, 0, 2, 0] Sum of each type:  [30, 48, 0, 48, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  3 assigned jobs [number,length,type]:
+[[8, 25, 1], [47, 34, 4], [19, 16, 1], [20, 15, 1], [29, 11, 3], [30, 25, 4]]
+Assigned types:  [1, 3, 4]
+Types histogram:  [3, 0, 1, 2, 0] Sum of each type:  [56, 0, 11, 59, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  4 assigned jobs [number,length,type]:
+[[4, 22, 5], [38, 25, 4], [15, 31, 4], [18, 20, 4], [21, 28, 3]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 1, 3, 1] Sum of each type:  [0, 0, 28, 76, 22, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  5 assigned jobs [number,length,type]:
+[[2, 23, 4], [35, 19, 5], [7, 31, 2], [24, 21, 2], [27, 33, 5]]
+Assigned types:  [2, 4, 5]
+Types histogram:  [0, 2, 0, 1, 2] Sum of each type:  [0, 52, 0, 23, 52, 0, 0, 0, 0, 0] Makespan :  127
+
+
+machine number  6 assigned jobs [number,length,type]:
+[[32, 26, 3], [0, 21, 3], [9, 24, 3], [41, 25, 4], [28, 30, 5]]
+Assigned types:  [3, 4, 5]
+Types histogram:  [0, 0, 3, 1, 1] Sum of each type:  [0, 0, 71, 25, 30, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  7 assigned jobs [number,length,type]:
+[[34, 20, 5], [26, 26, 5], [11, 26, 5], [12, 22, 4], [45, 32, 1]]
+Assigned types:  [1, 4, 5]
+Types histogram:  [1, 0, 0, 1, 3] Sum of each type:  [32, 0, 0, 22, 72, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  8 assigned jobs [number,length,type]:
+[[49, 36, 2], [40, 40, 2], [44, 29, 5], [5, 21, 1]]
+Assigned types:  [1, 2, 5]
+Types histogram:  [1, 2, 0, 0, 1] Sum of each type:  [21, 76, 0, 0, 29, 0, 0, 0, 0, 0] Makespan :  126
+
+
+machine number  9 assigned jobs [number,length,type]:
+[[33, 15, 2], [22, 16, 1], [39, 39, 2], [23, 17, 3], [10, 15, 2], [43, 24, 1]]
+Assigned types:  [1, 2, 3]
+Types histogram:  [2, 3, 1, 0, 0] Sum of each type:  [40, 69, 17, 0, 0, 0, 0, 0, 0, 0] Makespan :  126
+
+
+Max makespan is :  127
+------------------------------------------------
+
