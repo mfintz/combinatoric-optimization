@@ -608,6 +608,49 @@ def isLegalCircularSwap(machine1: Machine, machine2: Machine, machine3: Machine,
         return True
 
 
+
+
+# TODO: realy similar to the othe checks, make it *kwargs !
+def checkCircularSwapSpan(machine1: Machine, machine2: Machine, machine3: Machine, job1, job2, job3):
+    first = machine1.assigned_jobs[job1]
+    second = machine2.assigned_jobs[job2]
+    third = machine3.assigned_jobs[job3]
+
+    cur_span = finalMakeSpan()
+    machine1_span = machine1.span
+    machine2_span = machine2.span
+    machine3_span = machine3.span
+
+    local_max_span = max(machine1_span, machine2_span, machine3_span)
+
+    new_local_max_span = max(machine1_span - first.length + third.length,
+                             machine2_span - second.length + first.length,
+                             machine3_span - third.length + second.length)
+
+    if new_local_max_span < cur_span:  # by swapping the jobs we won't exceed the current makespan
+        if new_local_max_span < local_max_span:
+            return True
+        else:
+            return False
+    else:
+        return False
+
+
+
+#TODO: kwargs here too !
+def circularSwap(machine1: Machine, machine2: Machine, machine3: Machine, job1, job2, job3):
+    first_move = moveJob(machine1, machine2, job1)
+    second_move = moveJob(machine2, machine3, job2)
+    third_move = moveJob(machine3, machine1, job3)
+
+    if first_move and second_move and third_move:
+        return True
+    else:
+        return False
+
+
+
+
 # if all done return True, else return False
 def isDone(d_list):
     return all(item is False for item in d_list)
@@ -871,7 +914,7 @@ def circularSwapRoutine():
                 no_swap_count += 1
 
         # printMachineStat()
-        printMachineStatOut("Swapping jobs 2 by 2 with 2 machine")
+        printMachineStatOut("Circular swap between 3 machines")
         # printMachineStatConsole()
         if prev_makespan > finalMakeSpan():
             print("makespan: ", finalMakeSpan(), file=debug_file)
@@ -894,7 +937,7 @@ def localSearch():
         oneByOneSwapRoutine()
         colorChangeRoutine()
         twoByTwoSwapRoutine()
-
+        circularSwapRoutine()
         if finalMakeSpan() < prev:
             prev = finalMakeSpan()
         else:
