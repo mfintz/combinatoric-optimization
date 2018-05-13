@@ -1,5 +1,6 @@
 from random import randint
 import time
+import math
 
 start = time.time()
 
@@ -121,7 +122,7 @@ class Machine(object):
         self.number = num  # Machine serial #
         self.span = 0  # Initial makespan
         self.types = [0] * NUM_OF_TYPES  # Histogram of size 5 - to count each type assigned to the machine
-        self.types_sums = [0] * num_of_machines
+        self.types_sums = [0] * NUM_OF_TYPES
 
     def __str__(self):
         ret = ""
@@ -329,14 +330,14 @@ print(machines_list[0].isLegal())
 # TODO: return what ? should I return a number telling how many jobs moved successfully ? or maybe return list of unsuccessfull ?
 # TODO: EXTEND TO MOVE MORE THAN ONE JOB AT A TIME
 def moveJob(origin_machine: Machine, target_machine: Machine, job_to_move):
-    if target_machine.checkDiffTypes() <= 3:  # assuming isLegal already checked, this one is for debug
-        cur_job = origin_machine.retrieveJob(job_to_move)
-        origin_machine.removeJob(job_to_move)
-        target_machine.addJob(cur_job)
-        # print("moved job #",job_to_move,"from ",origin_machine,"to ",target_machine,file=debug_file)
-        return True
-    else:
-        return False
+    # if target_machine.checkDiffTypes() <= 3:  # assuming isLegal already checked, this one is for debug
+    cur_job = origin_machine.retrieveJob(job_to_move)
+    origin_machine.removeJob(job_to_move)
+    target_machine.addJob(cur_job)
+    # print("moved job #",job_to_move,"from ",origin_machine,"to ",target_machine,file=debug_file)
+    return True
+    # else:
+    #     return False
 
 
 # Swap 2 jobs from origin to target
@@ -810,23 +811,13 @@ def twoRoutineHelper(machine: Machine):
 
     for pair1 in origin_pairs:
 
-        move_at_least_once = False
-        break_flag = False
-
         for i in range(1, num_of_machines):
             target_machine = machines_list[(machine.number + i) % num_of_machines]
 
             target_pairs = uniquePairs(list(target_machine.assigned_jobs.copy().keys()))
 
             for pair2 in target_pairs:
-                # if pair1[0] == 98 and pair1[1] == 88 and pair2[0] == 99 and pair2[1] == 7:
-                #     print("inf loop start")
-                # if pair2[0] == 98 and pair2[1] == 88 and pair1[0] == 99 and pair1[1] == 7:
-                #     print("inf loop cont")
 
-                # moved = False
-
-                # TODO : implement
                 if isLegalTwoSwap(machine, target_machine, pair1,
                                   pair2):  # check if origin machine can accept target job and if target machine can accept origin job
                     move_or_not_to_move = checkTwoSwapSpan(machine, target_machine, pair1, pair2)
@@ -922,6 +913,12 @@ def circularSwapRoutine():
         if no_swap_count == 2:
             return
 
+def printRank():
+    spans = []
+    makespan = finalMakeSpan()
+    for machine in machines_list:
+        spans.append((makespan-machine.span)**2)
+    print("Distance rank is:",math.sqrt(sum(spans)),file=out_file)
 
 # TODO: writh a target function
 def localSearch():
@@ -941,7 +938,9 @@ def localSearch():
         if finalMakeSpan() < prev:
             prev = finalMakeSpan()
         else:
+            printRank()
             break
+
 
 
 localSearch()
