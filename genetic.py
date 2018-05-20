@@ -1,6 +1,7 @@
 from random import randint
 import time
 import math
+from numpy.random import choice
 
 start = time.time()
 
@@ -9,6 +10,10 @@ NUM_OF_TYPES = 5
 
 MAX_NUM_OF_JOBS = 1000
 MIN_NUM_OF_JOBS = 1
+
+NUM_OF_GEN = 10
+NUM_OF_CHROMOZOMS = 10
+
 
 debug_file = open("debugout.txt", "w")
 out_file = open("out.txt", "w")
@@ -159,6 +164,7 @@ class Machine(object):
     def retrieveJob(self, job_number):
         return self.assigned_jobs[job_number]
 
+    # TODO: make another version of this, for job objects and not numbers
     # removing job from the machine by job number
     def removeJob(self, job_number):
         job = self.retrieveJob(job_number)
@@ -198,6 +204,7 @@ class Machine(object):
 
 
 num_of_machines, raw_jobs = handleInput()
+num_of_jobs = len(raw_jobs)
 
 # Creates and returns a machines list
 def createMachines():
@@ -218,21 +225,46 @@ def createJobs():
     print("-----------------FINISHED CREATING JOB OBJECTS----------------------\n\n", file=debug_file)
     return jobs_list
 
-
+# Creating objects
 machines_list = createMachines()
 jobs_list = createJobs()
 
+# creating a chromosome - returning a list of size num_of_jobs , each index is job number, value is the assigned machine
+def createChrom():
+    ch = [0]*num_of_jobs
+    for i in range(num_of_jobs):
+        legal = False
+        while not legal:
+            machine_rand = randint(0,num_of_machines-1)
+            ch[i] = machine_rand
+            machines_list[machine_rand].addJob(jobs_list[i])
+            if machines_list[machine_rand].isLegal():
+                legal = True
+            else:
+                machines_list[machine_rand].removeJob(i)
 
-# Initial assignment of jobs to machines as follows : Machine 1 - types 1,2,3   Machine 2 - types 4,5
-def initialAssign():
-    for j in jobs_list:
-        if j.type == 1 or j.type == 2 or j.type == 3:
-            machines_list[0].addJob(j)
-        else:
-            machines_list[1].addJob(j)
+
+    return ch
+
+# creating a population - returning a list (of lists) of NUM_OF_CHROMOZOMS chromosomes
+def createPop():
+    pop = []
+    for i in range(NUM_OF_CHROMOZOMS):
+        curr = []
+        legal = False
+        while not legal:
+            chrom = createChrom()
+            eval = evaluateOne(chrom)
+
+            if eval > 0:
+                legal = True
+        curr.append(chrom)
+        curr.append(eval)
+        pop.append(curr)
+    return pop
 
 
-def finalMakeSpan():
+def makeSpan():
     max_span = 0
     for machine in machines_list:
         if machine.span > max_span:
@@ -240,67 +272,141 @@ def finalMakeSpan():
     return max_span
 
 
-# Print machines' stats
-def printMachineStat():
-    print("---------------MACHINES STATS--------------------------\n", file=debug_file)
+
+
+
+def printMachineStatConsole(chrom):
+    print("---------------MACHINES STATS--------------------------\n")
+    print("current chromosome:",chrom)
     for machine in machines_list:
         cur_job_list = machine.retrieveJobsList()
-        print("machine # ", machine.number, "assigned jobs #:", file=debug_file)
-        l = []
-        for job in cur_job_list:
-            l.append(job)
-        print("".join(str(l)), file=debug_file)
-
-        print("Types: ", machine.types, "Makespan : ", machine.span, file=debug_file)
-    print("Max makespan is : ", finalMakeSpan(), file=debug_file)
-    print("------------------------------------------------\n", file=debug_file)
-
-
-def printMachineStatOut(action):
-    print("---------------MACHINES STATS # %s %s--------------------------\n" % (
-    printMachineStatOut.out_stat_counter, action), file=out_file)
-    for machine in machines_list:
-        cur_job_list = machine.retrieveJobsList()
-        print("machine number ", machine.number, "assigned jobs [number,length,type]:", file=out_file)
+        print("machine number ", machine.number, "assigned jobs [number,length,type]:")
         l = []
         for job_number, job in cur_job_list.items():
             l.append(job)
-        print("".join(str(l)), file=out_file)
-
-        print("Assigned types: ", machine.getTypes(), file=out_file)
-        print("Types histogram: ", machine.types, "Sum of each type: ", machine.types_sums, "Makespan : ", machine.span,
-              file=out_file)
-        print("\n", file=out_file)
-    print("Max makespan is : ", finalMakeSpan(), file=out_file)
-    print("------------------------------------------------\n", file=out_file)
-    printMachineStatOut.out_stat_counter = printMachineStatOut.out_stat_counter + 1
-
-
-printMachineStatOut.out_stat_counter = 0
-
-
-def printMachineStatConsole():
-    print("---------------MACHINES STATS--------------------------\n")
-    for machine in machines_list:
-        cur_job_list = machine.retrieveJobsList()
-        print("machine # ", machine.number, "assigned jobs #:")
-        l = []
-        for job in cur_job_list:
-            l.append(job)
         print("".join(str(l)))
 
-        print("Types: ", machine.types, "Makespan : ", machine.span)
-    print("Max makespan is : ", finalMakeSpan())
-    print("------------------------------------------------\n")
+        print("Assigned types: ", machine.getTypes())
+        print("Types histogram: ", machine.types, "Sum of each type: ", machine.types_sums, "Makespan : ", machine.span)
+        print("\n")
+
+    print("Max makespan is : ", makeSpan())
+    # print("------------------------------------------------\n", file=out_file)
 
 
-initialAssign()
-printMachineStat()
+def removeAllJobs():
+    for machine in machines_list:
+        cur_jobs = dict(machine.assigned_jobs)
+        for key, job in cur_jobs.items():
+            if key != job.number:
+                print("SOMETHING WENT WRONG")
+            num = job.number
+            machine.removeJob(num)
+            # print("REMOVED  -- machine#: ", machine.number, "assigned jobs: ", job)
+
+
+# TODO: better evaluiation
+# evalutation at the moment is just the makespan of a single chromosome
+def evaluateOne(chromosome: list):
+    # simulate adding the jobs
+    # TODO: If slow run, consider removing thos for. Might be redundant anyway
+    for i in range(len(chromosome)):
+        machines_list[chromosome[i]].addJob(jobs_list[i])
+        if not machines_list[chromosome[i]].isLegal():
+            removeAllJobs()
+            return -1
+    # printMachineStatConsole(chromosome)
+
+    span = makeSpan()
+
+    # revert to neutral state
+    removeAllJobs()
+
+    # for i in range(len(chromosome)):
+    #     machines_list[chromosome[i]].removeJob(i)
+
+    return span
+
+def distributionRank(worst,population):
+    dist = []
+    sum  = 0
+    # for p in population:
+
+
+# current fitness function = the difference between chromosome's makespan and the worst chromosome's makespan
+def updateFitness(chormosome,worst):
+    fitness = (worst-chormosome[1])+1   # TODO: fix smoothing
+    chormosome.append(fitness)
+    return fitness
+
+def updateProb(chromosome, sum):
+    prob = chromosome[2]/(sum)
+    chromosome.append(prob)
+    return prob
+
+# go over popluation and calculate each one's fitness
+def evaluateAll(population: list):
+    worst = 0
+    sum = 0
+    # prob_sum = 0
+    probabilites = []
+    for i in range(len(population)):
+        eval = population[i][1]
+        # population[i].append(eval)
+        if eval > worst:
+            worst = eval
+        # print(population[i],population[i][1])
+        print(population[i][0])
+        print(eval)
+    for j in range(len(population)):
+        fitness = updateFitness(population[j], worst)
+        sum += fitness
+    for k in range(len(population)):
+        prob = updateProb(population[k], sum)
+        probabilites.append(prob)
+        # prob_sum += prob
 
 
 
 
+    print("worst chromosome makespan:", worst)
 
+    return probabilites
+
+
+
+
+def printPop(population: list):
+    for p in population:
+        print(p)
+
+
+
+def selection(probs):
+    # pick 2 parents out of this distribution
+    t = [i for i in range(len(probs))]
+    draw = choice(t, 2, p=probs, replace=False)
+
+
+pop = createPop()
+printPop(pop)
+
+print("evaluate:")
+probs = evaluateAll(pop)
+
+
+print("####################")
+
+for p in pop:
+    print(p)
+
+
+
+#debug
+probs_sum = 0
+for i in range(len(probs)):
+    probs_sum += probs[i]
+print(probs_sum)
 
 
 debug_file.close()
