@@ -1,6 +1,8 @@
 from random import randint
 import time
 import math
+
+import sys
 from numpy.random import choice
 
 start = time.time()
@@ -11,7 +13,7 @@ NUM_OF_TYPES = 5
 MAX_NUM_OF_JOBS = 1000
 MIN_NUM_OF_JOBS = 1
 
-NUM_OF_GEN = 10
+NUM_OF_GEN = 20
 NUM_OF_CHROMOZOMS = 10
 
 
@@ -243,7 +245,7 @@ def createChrom():
             else:
                 machines_list[machine_rand].removeJob(i)
 
-
+    removeAllJobs()
     return ch
 
 # creating a population - returning a list (of lists) of NUM_OF_CHROMOZOMS chromosomes
@@ -347,6 +349,7 @@ def updateProb(chromosome, sum):
 # go over popluation and calculate each one's fitness
 def evaluateAll(population: list):
     worst = 0
+    best = sys.maxsize
     sum = 0
     # prob_sum = 0
     probabilites = []
@@ -355,9 +358,11 @@ def evaluateAll(population: list):
         # population[i].append(eval)
         if eval > worst:
             worst = eval
+        if eval < best:
+            best = eval
         # print(population[i],population[i][1])
-        print(population[i][0])
-        print(eval)
+        # print(population[i][0])
+        # print(eval)
     for j in range(len(population)):
         fitness = updateFitness(population[j], worst)
         sum += fitness
@@ -369,7 +374,8 @@ def evaluateAll(population: list):
 
 
 
-    print("worst chromosome makespan:", worst)
+    print("worst chromosome makespan:", worst, "best chromosome makespan:",best)
+
 
     return probabilites
 
@@ -386,27 +392,117 @@ def selection(probs):
     # pick 2 parents out of this distribution
     t = [i for i in range(len(probs))]
     draw = choice(t, 2, p=probs, replace=False)
+    return draw
+
+# crossover operator for 2 parents , producing 2 children
+# getting 2 lists, mom and dad, and slices ==-> how many slice do we want to crossover (2 slices = 1 cross point etc.)
+# also returns the makespan of each child
+def xo(mom:list,dad:list,slices):
+    legal = False
+    legal_son = False
+    legal_daughter = False
+    son = []
+    daughter = []
+    while not legal:
+        # random cut point
+        slice_points = []
+        for i in range(slices - 1):
+            slice_points.append(randint(0, len(dad)-1))
+        slice_points.sort()
+        #TODO: multi points slices (now theres only 1)
+        #for j in range(len(slice_points)):
+        if legal_son is False:
+            son = dad[:slice_points[0]]+mom[slice_points[0]:]
+            eval_son = evaluateOne(son)
+            if eval_son > -1:
+                legal_son = True
+        if legal_daughter is False:
+            daughter = mom[:slice_points[0]]+dad[slice_points[0]:]
+            eval_daughter = evaluateOne(daughter)
+            if eval_daughter > -1:
+                legal_daughter = True
+
+        legal = legal_son and legal_daughter
+    # if eval_son == -1 or eval_daughter == -1:
+    #     print()
+    return son,eval_son,daughter,eval_daughter
+
+#TODO: make room for mutation
+def reproduce(population:list):
+    new_gen = []
+    probs = []
+    for p in population:
+        probs.append(p[3])
+    while len(new_gen) != len(probs):
+        parents = selection(probs)
+        son,eval_son,daughter,eval_daughter = xo(population[parents[0]][0],population[parents[1]][0],2)
+        new_gen.append([son,eval_son])
+        new_gen.append([daughter,eval_daughter])
+    evaluateAll(new_gen)
+    return new_gen
 
 
-pop = createPop()
-printPop(pop)
-
-print("evaluate:")
-probs = evaluateAll(pop)
-
-
-print("####################")
-
-for p in pop:
-    print(p)
 
 
 
-#debug
-probs_sum = 0
-for i in range(len(probs)):
-    probs_sum += probs[i]
-print(probs_sum)
+
+
+def genetic():
+    print("Number of generation to be created:",NUM_OF_GEN)
+    print("Number of chromosomes:",NUM_OF_CHROMOZOMS)
+    print("Number of generation to be created:", NUM_OF_GEN,file=out_file)
+    print("Number of chromosomes:", NUM_OF_CHROMOZOMS,file=out_file)
+    print("First population:")
+    pop = createPop()
+    # printPop(pop)
+    best = 999999999999
+    best_chromosome = []
+    probs = evaluateAll(pop)
+
+    # print("####################")
+
+    for p in pop:
+        print(p,file=out_file)
+        print(p)
+        if p[1] < best:
+            best = p[1]
+            best_chromosome = p
+
+    # debug
+    # probs_sum = 0
+    # for i in range(len(probs)):
+    #     probs_sum += probs[i]
+    # print(probs_sum)
+
+    # print(xo(pop[0][0], pop[1][0], 2))
+
+    # print("####################")
+
+    # for pp in new_gg:
+    #     print(pp)
+
+    print("###############")
+
+    for i in range(NUM_OF_GEN):
+        #TODO: check if pop = reproduce(pop) is valid
+        new_gg = reproduce(pop)
+        pop = new_gg
+        print("New generation:")
+        print("New generation:", file=out_file)
+        for p in pop:
+            print(p, file=out_file)
+            print(p)
+            if p[1] < best:
+                best = p[1]
+                best_chromosome = p
+        print("###############")
+    print("###############")
+    print("###############")
+    print("Best chromosome is :",best_chromosome[0],"with makespan of:",best_chromosome[1])
+    print("Best chromosome is :",best_chromosome[0],"with makespan of:",best_chromosome[1],file=out_file)
+
+
+genetic()
 
 
 debug_file.close()
