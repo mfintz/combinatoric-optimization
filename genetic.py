@@ -14,7 +14,7 @@ MAX_NUM_OF_JOBS = 1000
 MIN_NUM_OF_JOBS = 1
 
 NUM_OF_GEN = 20
-NUM_OF_CHROMOZOMS = 10
+NUM_OF_CHROMOZOMS = 100
 
 
 debug_file = open("debugout.txt", "w")
@@ -334,12 +334,20 @@ def distributionRank(worst,population):
     sum  = 0
     # for p in population:
 
+# TODO: merge fitness function to one that gets options between first or second etc
 
 # current fitness function = the difference between chromosome's makespan and the worst chromosome's makespan
+# def updateFitness(chormosome,worst):
+#     fitness = (worst-chormosome[1])+1   # TODO: fix smoothing
+#     chormosome.append(fitness)
+#     return fitness
+
+# another fitness option = 1/makespan
 def updateFitness(chormosome,worst):
-    fitness = (worst-chormosome[1])+1   # TODO: fix smoothing
+    fitness = 1/(chormosome[1])
     chormosome.append(fitness)
     return fitness
+
 
 def updateProb(chromosome, sum):
     prob = chromosome[2]/(sum)
@@ -397,27 +405,38 @@ def selection(probs):
 # crossover operator for 2 parents , producing 2 children
 # getting 2 lists, mom and dad, and slices ==-> how many slice do we want to crossover (2 slices = 1 cross point etc.)
 # also returns the makespan of each child
-def xo(mom:list,dad:list,slices):
+def xo(mom:list,eval_mom,dad:list,eval_dad,slices):
     legal = False
     legal_son = False
     legal_daughter = False
     son = []
     daughter = []
+    point_track = set()
     while not legal:
         # random cut point
-        slice_points = []
-        for i in range(slices - 1):
-            slice_points.append(randint(0, len(dad)-1))
-        slice_points.sort()
+        # slice_points = []
+        # for i in range(slices - 1):
+        #     slice_points.append(randint(0, len(dad)-1))
+        # slice_points.sort()
+        slice_point = randint(0, len(dad)-1)
+        if slice_point in point_track:
+            continue
+        point_track.add(slice_point)
+        if len(point_track) == len(dad):    # exhausted all possible points with no success
+            if legal_son is True:   # and legal_daughter is False
+                return son,eval_son,mom,eval_mom
+            if legal_daughter is True:  # and legal_son is False
+                return dad, eval_dad, daughter, eval_daughter
+
         #TODO: multi points slices (now theres only 1)
         #for j in range(len(slice_points)):
         if legal_son is False:
-            son = dad[:slice_points[0]]+mom[slice_points[0]:]
+            son = dad[:slice_point]+mom[slice_point:]
             eval_son = evaluateOne(son)
             if eval_son > -1:
                 legal_son = True
         if legal_daughter is False:
-            daughter = mom[:slice_points[0]]+dad[slice_points[0]:]
+            daughter = mom[:slice_point]+dad[slice_point:]
             eval_daughter = evaluateOne(daughter)
             if eval_daughter > -1:
                 legal_daughter = True
@@ -435,14 +454,79 @@ def reproduce(population:list):
         probs.append(p[3])
     while len(new_gen) != len(probs):
         parents = selection(probs)
-        son,eval_son,daughter,eval_daughter = xo(population[parents[0]][0],population[parents[1]][0],2)
+        son,eval_son,daughter,eval_daughter = xo(population[parents[0]][0],population[parents[0]][1], population[parents[1]][0],population[parents[1]][1],2)
         new_gen.append([son,eval_son])
         new_gen.append([daughter,eval_daughter])
+
+
+    # mutation comes here
+    # lets say 5% of the population gets mutated
+    how_many_to_mutate = int(NUM_OF_CHROMOZOMS * (1/100))
+    t = [i for i in range(NUM_OF_CHROMOZOMS)]
+    # TODO: maybe choose with other distribution
+    # choose percent of the population randomly, uniformly
+    indices_to_mutate = choice(t, how_many_to_mutate, replace=False)
+    for i in range(len(indices_to_mutate)):
+        mutate(new_gen[indices_to_mutate[i]])
+
     evaluateAll(new_gen)
     return new_gen
 
 
 
+# mutating a chromosome in N genes , at index 0 - chromosome itself, at index 1 - the makespand
+def mutate(chromosome:list):
+
+
+    # how_many_to_mutate = randint(0,len(chromosome[0]))
+    t = [i for i in range(len(chromosome[0]))]
+    indices_to_mutate = choice(t, 1, replace=False)
+
+    # now needs to simulate as if the whole chromosome is assigned and check changes
+    # assigning all
+    for i in range(len(chromosome[0])):
+        machines_list[chromosome[0][i]].addJob(jobs_list[i])
+
+    for i in range(len(indices_to_mutate)):
+        # TODO: remove
+        print("MUTATING", file=out_file)
+        print("MUTATING")
+
+        # remove old (and good) index
+        machines_list[chromosome[0][indices_to_mutate[i]]].removeJob(indices_to_mutate[i])
+        #TODO: debug if indices_to_mutate[i] == jobs_list[indices_to_mutate[i]]
+        legal = False
+        while not legal:
+            machine_rand = randint(0,num_of_machines-1)
+            # add a new one instead
+            machines_list[machine_rand].addJob(jobs_list[indices_to_mutate[i]])
+            if machines_list[machine_rand].isLegal():
+                chromosome[0][indices_to_mutate[i]] = randint(0,num_of_machines-1)
+                legal = True
+            else:
+                machines_list[machine_rand].removeJob(indices_to_mutate[i])
+    span = makeSpan()
+    chromosome[1] = span
+    removeAllJobs()
+    return span
+
+
+
+
+
+
+
+#
+#
+#
+# pop = createPop()
+# printPop(pop)
+# mutate(pop[0][0])
+#
+# best_chromosome = []
+# probs = evaluateAll(pop)
+# for p in pop:
+#     print(p)
 
 
 
@@ -487,8 +571,8 @@ def genetic():
         #TODO: check if pop = reproduce(pop) is valid
         new_gg = reproduce(pop)
         pop = new_gg
-        print("New generation:")
-        print("New generation:", file=out_file)
+        print("New generation, number:",i)
+        print("New generation, number:",i, file=out_file)
         for p in pop:
             print(p, file=out_file)
             print(p)
