@@ -13,7 +13,7 @@ NUM_OF_TYPES = 5
 MAX_NUM_OF_JOBS = 1000
 MIN_NUM_OF_JOBS = 1
 
-NUM_OF_GEN = 20
+NUM_OF_GEN = 25
 NUM_OF_CHROMOZOMS = 100
 
 
@@ -312,6 +312,7 @@ def removeAllJobs():
 def evaluateOne(chromosome: list):
     # simulate adding the jobs
     # TODO: If slow run, consider removing thos for. Might be redundant anyway
+    # TODO: use this for as another simulation function
     for i in range(len(chromosome)):
         machines_list[chromosome[i]].addJob(jobs_list[i])
         if not machines_list[chromosome[i]].isLegal():
@@ -329,13 +330,9 @@ def evaluateOne(chromosome: list):
 
     return span
 
-def distributionRank(worst,population):
-    dist = []
-    sum  = 0
-    # for p in population:
+
 
 # TODO: merge fitness function to one that gets options between first or second etc
-
 # current fitness function = the difference between chromosome's makespan and the worst chromosome's makespan
 # def updateFitness(chormosome,worst):
 #     fitness = (worst-chormosome[1])+1   # TODO: fix smoothing
@@ -343,10 +340,27 @@ def distributionRank(worst,population):
 #     return fitness
 
 # another fitness option = 1/makespan
-def updateFitness(chormosome,worst):
-    fitness = 1/(chormosome[1])
-    chormosome.append(fitness)
-    return fitness
+# def updateFitness(chormosome,worst):
+#     fitness = 1/(chormosome[1])
+#     chormosome.append(fitness)
+#     return fitness
+
+# TODO: get the s.d up ahead
+# using 1/squared distance
+def updateFitness(chromosome,worst):
+    for i in range(len(chromosome[0])):
+        machines_list[chromosome[0][i]].addJob(jobs_list[i])
+    machines_span = []
+    makespan = chromosome[1]
+    for i in range(len(machines_list)):
+        machines_span.append((makespan - machines_list[i].span)**2)
+    removeAllJobs()
+    sqared_distance = math.sqrt(sum(machines_span))
+    chromosome.append(1/sqared_distance)
+    return 1/sqared_distance
+
+
+
 
 
 def updateProb(chromosome, sum):
