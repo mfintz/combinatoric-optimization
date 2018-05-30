@@ -396,7 +396,7 @@ def evaluateAll(population: list):
 
 
 
-    print("worst chromosome makespan:", worst, "best chromosome makespan:",best)
+    print("worst chromosome makespan:", worst, "best chromosome makespan:",best,file=out_file)
 
 
     return probabilites
@@ -502,9 +502,6 @@ def mutate(chromosome:list):
         machines_list[chromosome[0][i]].addJob(jobs_list[i])
 
     for i in range(len(indices_to_mutate)):
-        # TODO: remove
-        print("MUTATING", file=out_file)
-        print("MUTATING")
 
         # remove old (and good) index
         machines_list[chromosome[0][indices_to_mutate[i]]].removeJob(indices_to_mutate[i])
@@ -543,14 +540,42 @@ def mutate(chromosome:list):
 #     print(p)
 
 
+def printMachineStatOut():
+    print("---------------MACHINES STATS --------------------------\n", file=out_file)
+    for machine in machines_list:
+        cur_job_list = machine.retrieveJobsList()
+        print("machine number ", machine.number, "assigned jobs [number,length,type]:", file=out_file)
+        l = []
+        for job_number, job in cur_job_list.items():
+            l.append(job)
+        print("".join(str(l)), file=out_file)
+
+        print("Assigned types: ", machine.getTypes(), file=out_file)
+        print("Types histogram: ", machine.types, "Sum of each type: ", machine.types_sums, "Makespan : ", machine.span,
+              file=out_file)
+        print("\n", file=out_file)
+    print("Max makespan is : ", makeSpan(), file=out_file)
+
+
+
+# prints the chromosome's stat
+def printChromQual(chromosome:list):
+    sum = 0
+    for i in range(len(chromosome)):
+        machines_list[chromosome[i]].addJob(jobs_list[i])
+        sum += jobs_list[i].length
+    printMachineStatOut()
+    print("Optimal solution (sum/num_of_jobs) could be :",sum/num_of_machines,file=out_file)
+    print("------------------------------------------------\n", file=out_file)
+
 
 
 def genetic():
-    print("Number of generation to be created:",NUM_OF_GEN)
-    print("Number of chromosomes:",NUM_OF_CHROMOZOMS)
-    print("Number of generation to be created:", NUM_OF_GEN,file=out_file)
-    print("Number of chromosomes:", NUM_OF_CHROMOZOMS,file=out_file)
-    print("First population:")
+    print("Number of jobs:",len(jobs_list),file=out_file)
+    print("Number of machines:",len(machines_list),file=out_file)
+    print("Number of chromosomes:",NUM_OF_CHROMOZOMS,file=out_file)
+    print("Number of generations to be created:", NUM_OF_GEN,file=out_file)
+    print("First population:",file=out_file)
     pop = createPop()
     # printPop(pop)
     best = 999999999999
@@ -585,19 +610,21 @@ def genetic():
         #TODO: check if pop = reproduce(pop) is valid
         new_gg = reproduce(pop)
         pop = new_gg
-        print("New generation, number:",i)
-        print("New generation, number:",i, file=out_file)
+        if (i%5 == 0):
+            print("New generation, number:",i)
+            print("New generation, number:",i, file=out_file)
         for p in pop:
-            print(p, file=out_file)
-            print(p)
+            if (i%5 == 0):
+                print(p, file=out_file)
             if p[1] < best:
                 best = p[1]
                 best_chromosome = p
-        print("###############")
-    print("###############")
-    print("###############")
+        print("###############",file=out_file)
+    print("###############",file=out_file)
     print("Best chromosome is :",best_chromosome[0],"with makespan of:",best_chromosome[1])
     print("Best chromosome is :",best_chromosome[0],"with makespan of:",best_chromosome[1],file=out_file)
+    printChromQual(best_chromosome[0])
+
 
 
 genetic()
