@@ -3,6 +3,8 @@ import time
 import math
 
 import sys
+
+import copy
 from numpy.random import choice
 
 start = time.time()
@@ -202,6 +204,15 @@ class Machine(object):
         return re_list
 
 
+
+class State(object):
+    def __init__(self):
+        machines = []
+
+
+
+
+
 num_of_machines, raw_jobs = handleInput()
 num_of_jobs = len(raw_jobs)
 
@@ -231,8 +242,8 @@ machines_list = createMachines()
 jobs_list = createJobs()
 
 
-def removeAllJobs():
-    for machine in machines_list:
+def removeAllJobs(m_list):
+    for machine in m_list:
         cur_jobs = dict(machine.assigned_jobs)
         for key, job in cur_jobs.items():
             if key != job.number:
@@ -245,22 +256,174 @@ def removeAllJobs():
 
 
 
-def findMinLoadMachine():
-    prev_min_load = machines_list[0].span
+def findMinLoadMachine(m_list):
+    prev_min_load = m_list[0].span
     min_load_index = 0
-    for i in range(1,len(machines_list)):
-        if machines_list[i].span < prev_min_load:
-            prev_min_load = machines_list[i].span
+    for i in range(1,len(m_list)):
+        if m_list[i].span < prev_min_load:
+            prev_min_load = m_list[i].span
             min_load_index = i
     return min_load_index
 
+def findMinLoadMachineLegaly(m_list):
+    m_list_sorted = sorted(m_list, key=lambda x: x.span)
+    return m_list_sorted
 
-def lpt(jobs):
+# current lpt is actually returning a new full state (after lpt algorithm)
+def lpt(jobs, m_list):
     job_list_sorted_by_length = sorted(jobs, key=lambda x: x.length, reverse=True)
+    new_machines_list = copy.deepcopy(m_list)
     for i in range(len(job_list_sorted_by_length)):
-        machines_list[findMinLoadMachine()].addJob(job_list_sorted_by_length[i])
+        new_machines_list[findMinLoadMachine(new_machines_list)].addJob(job_list_sorted_by_length[i])
+    # new_machines_list = copy.deepcopy(m_list)
+    # removeAllJobs(m_list)
+    return new_machines_list
 
-    print()
+
+def legalLpt(jobs,m_list):
+    job_list_sorted_by_length = sorted(jobs, key=lambda x: x.length, reverse=True)
+    new_machines_list = copy.deepcopy(m_list)
+    for i in range(len(job_list_sorted_by_length)):
+        legal = False
+        # check assignment for next min loaded machine that is legal
+        for j in range(len(new_machines_list)):
+            assign_to_machines = findMinLoadMachineLegaly(new_machines_list)
+            new_machines_list[assign_to_machines[j].number].addJob(job_list_sorted_by_length[i])
+            if new_machines_list[assign_to_machines[j].number].isLegal():
+                legal = True
+                break
+            else:   # revert
+                new_machines_list[assign_to_machines[j].number].removeJob(job_list_sorted_by_length[i].number)
+        #TODO: check the option of no legal assignment can be made
+    # new_machines_list = copy.deepcopy(m_list)
+    # removeAllJobs(m_list)
+    return new_machines_list
 
 
-lpt(jobs_list)
+
+new_m_list = lpt(jobs_list,machines_list)
+
+
+
+def makeSpan(m_list: list):
+    max_span = 0
+    for machine in m_list:
+        if machine.span > max_span:
+            max_span = machine.span
+    return max_span
+
+
+
+
+def simulateState(cur_job, cur_machine, cur_state):
+    new_state = copy.deepcopy(cur_state)
+    print("\nassigned job",cur_job.number , "to", cur_machine,file=out_file)
+    new_state[cur_machine].addJob(cur_job)
+
+    return new_state
+
+
+
+def printMachineStatOut(m_list):
+    print("---------------MACHINES STATS--------------------------\n",file=out_file)
+    for machine in m_list:
+        cur_job_list = machine.retrieveJobsList()
+        print("machine number ", machine.number, "assigned jobs [number,length,type]:",file=out_file)
+        l = []
+        for job_number, job in cur_job_list.items():
+            l.append(job)
+        print("".join(str(l)),file=out_file)
+
+        print("Assigned types: ", machine.getTypes(),file=out_file)
+        print("Types histogram: ", machine.types, "Sum of each type: ", machine.types_sums, "Makespan : ", machine.span,file=out_file)
+
+
+
+
+# check if a state is legal so far
+def checkLegalState(state:list):
+    for machine in state:
+        if machine.isLegal() is False:
+            return False
+    return True
+
+
+
+
+def isLegalMove(target_machine: Machine, job_type):
+    check = target_machine.checkDiffTypes()  # count how many diff types we have on target machine
+    if check < 3:
+        return True  # we surely have free space so no further checking is needed
+    elif check == 3 and job_type in target_machine.getTypes():  # check if the kinds we do have is of the same as new job
+        return True
+    else:  # might be a mistake - but still check so we don't have more than 3 types
+        return False
+
+
+def lowerBound(state):
+    args = []
+    args.append(avg_job)
+    args.append(max_job)
+    for machine in state:
+        args.append(machine.span)
+    return max(args)
+
+
+
+# start with the full tree, no pruning
+def bnb(state, jobs):
+    global best_state
+    if len(jobs) == 0:
+        return
+
+    for i in range(len(machines_list)):
+        new_state = simulateState(jobs[0], i, state)
+
+        printMachineStatOut(new_state)
+        is_legal_state = checkLegalState(new_state)
+        lower_bound = lowerBound(new_state)
+
+        print("legal state:",is_legal_state,file=out_file)
+        print("lower bound is:",lower_bound,file=out_file)
+        #TODO: remove,debug
+        if is_legal_state is False:
+            print("state is already illegal so no need to calculate upper bound, pruning here",file=out_file)
+
+
+
+        # TODO: check final state ? or is it covered already?
+
+
+        if is_legal_state is True:
+            # remember that doing lpt is just for upper bound calculation , so there might be no need in getting the after_lpt
+            print("now doing lpt for the rest", file=out_file)
+            after_lpt = legalLpt(jobs[1:], new_state)
+            # printMachineStatOut(after_lpt)
+            #TODO: remove, it's just for debug - making sure lpt was legal
+            print("legal state,after lpt:", checkLegalState(after_lpt), file=out_file)
+
+            upper_bound = makeSpan(after_lpt)
+            print("lower bound:",lower_bound,"upper bound is:",upper_bound,file=out_file)
+
+            if lower_bound == upper_bound:
+                if best_state_makespan > upper_bound:
+                    best_state = after_lpt
+            else:
+                if lower_bound < upper_bound:
+                    bnb(new_state, jobs[1:])
+
+
+max_job = max(x.length for x in jobs_list)
+avg_job = sum(x.length for x in jobs_list)/num_of_machines
+
+best_state = legalLpt(jobs_list,machines_list)
+best_state_makespan = makeSpan(best_state)
+
+bnb(machines_list,jobs_list)
+
+print("***************************************************",file=out_file)
+print("***************************************************",file=out_file)
+print("BEST STATE IS",file=out_file)
+printMachineStatOut(best_state)
+
+out_file.close()
