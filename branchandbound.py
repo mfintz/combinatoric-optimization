@@ -1,6 +1,7 @@
 from random import randint
 import time
 import math
+import time
 
 import sys
 
@@ -18,6 +19,9 @@ MIN_NUM_OF_JOBS = 1
 
 debug_file = open("debugout.txt", "w")
 out_file = open("out.txt", "w")
+
+
+
 
 
 # returns the total number of machines that will be in use , and a raw jobs data
@@ -295,6 +299,8 @@ def legalLpt(jobs,m_list):
             else:   # revert
                 new_machines_list[assign_to_machines[j].number].removeJob(job_list_sorted_by_length[i].number)
         #TODO: check the option of no legal assignment can be made
+        if not legal:
+            return []
     # new_machines_list = copy.deepcopy(m_list)
     # removeAllJobs(m_list)
     return new_machines_list
@@ -317,7 +323,7 @@ def makeSpan(m_list: list):
 
 def simulateState(cur_job, cur_machine, cur_state):
     new_state = copy.deepcopy(cur_state)
-    print("\nassigned job",cur_job.number , "to", cur_machine,file=out_file)
+    # print("\nassigned job",cur_job.number , "to", cur_machine,file=out_file)
     new_state[cur_machine].addJob(cur_job)
 
     return new_state
@@ -372,44 +378,65 @@ def lowerBound(state):
 
 # start with the full tree, no pruning
 def bnb(state, jobs):
-    global best_state
+    global best_state,best_state_makespan
     if len(jobs) == 0:
+        return
+
+    if best_state_makespan == math.ceil(avg_job):
         return
 
     for i in range(len(machines_list)):
         new_state = simulateState(jobs[0], i, state)
 
-        printMachineStatOut(new_state)
+        # printMachineStatOut(new_state)
         is_legal_state = checkLegalState(new_state)
         lower_bound = lowerBound(new_state)
 
-        print("legal state:",is_legal_state,file=out_file)
-        print("lower bound is:",lower_bound,file=out_file)
+        # print("legal state:",is_legal_state,file=out_file)
+        # print("lower bound is:",lower_bound,file=out_file)
+
+
         #TODO: remove,debug
-        if is_legal_state is False:
-            print("state is already illegal so no need to calculate upper bound, pruning here",file=out_file)
+        # if is_legal_state is False:
+        #     print("state is already illegal so no need to calculate upper bound, pruning here",file=out_file)
+        #
 
-
-
+        if (out_file.tell()) > 4026531840:
+            print("break due to size limit - reached 30 GB",file=debug_file)
+            sys.exit(1)
         # TODO: check final state ? or is it covered already?
 
 
         if is_legal_state is True:
             # remember that doing lpt is just for upper bound calculation , so there might be no need in getting the after_lpt
-            print("now doing lpt for the rest", file=out_file)
+
+            # print("now doing lpt for the rest", file=out_file)
             after_lpt = legalLpt(jobs[1:], new_state)
             # printMachineStatOut(after_lpt)
             #TODO: remove, it's just for debug - making sure lpt was legal
-            print("legal state,after lpt:", checkLegalState(after_lpt), file=out_file)
+            # print("legal state,after lpt:", checkLegalState(after_lpt), file=out_file)
+            if len(after_lpt) == 0:
+                # meaning legalLPT has failed - need the other algorithm
+                upper_bound = 99999999999
+            else:
+                upper_bound = makeSpan(after_lpt)
 
-            upper_bound = makeSpan(after_lpt)
-            print("lower bound:",lower_bound,"upper bound is:",upper_bound,file=out_file)
+            # print("lower bound:",lower_bound,"upper bound is:",upper_bound,file=out_file)
 
             if lower_bound == upper_bound:
                 if best_state_makespan > upper_bound:
-                    best_state = after_lpt
-            else:
-                if lower_bound < upper_bound:
+                    best_state_makespan = upper_bound
+                    # print only if there's new best solution
+                    if upper_bound == 99999999999:
+                        print("Node output:",file=out_file)
+                        printMachineStatOut(new_state)
+                    else:
+                        print("lpt output:",file=out_file)
+                        printMachineStatOut(after_lpt)
+                        best_state = after_lpt
+
+            else: #and best_state_makespan > math.ceil(avg_job)
+                if lower_bound < upper_bound and lower_bound < best_state_makespan:
                     bnb(new_state, jobs[1:])
 
 
@@ -417,13 +444,19 @@ max_job = max(x.length for x in jobs_list)
 avg_job = sum(x.length for x in jobs_list)/num_of_machines
 
 best_state = legalLpt(jobs_list,machines_list)
-best_state_makespan = makeSpan(best_state)
+#TODO: of best_state is empty run the other alg
+if len(best_state)!= 0:
+    best_state_makespan = makeSpan(best_state)
+else:
+    best_state_makespan = 99999999999
 
+start_time = time.time()
 bnb(machines_list,jobs_list)
 
 print("***************************************************",file=out_file)
 print("***************************************************",file=out_file)
 print("BEST STATE IS",file=out_file)
 printMachineStatOut(best_state)
+print("--- %s seconds ---" % (time.time() - start_time))
 
 out_file.close()
