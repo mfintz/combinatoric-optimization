@@ -1,6 +1,6 @@
 # Combinatorial optimization - Identical parallel Machine Scheduling
 
-###Some background:
+### Some background:
 [Combinatorical Optimization for dummies](https://en.wikipedia.org/wiki/Combinatorial_optimization)
 
 [Google's effort on optimization](https://developers.google.com/optimization/introduction/overview)
