@@ -5,20 +5,19 @@ import math
 import sys
 from numpy.random import choice
 
-start = time.time()
 
 # Constants
 NUM_OF_TYPES = 5
 
 MAX_NUM_OF_JOBS = 1000
-MIN_NUM_OF_JOBS = 1
 
-NUM_OF_GEN = 25
+NUM_OF_GEN = 50
 NUM_OF_CHROMOZOMS = 100
+
+file_times = (time.time()/10000)
 
 
 debug_file = open("debugout.txt", "w")
-out_file = open("out.txt", "w")
 
 
 # returns the total number of machines that will be in use , and a raw jobs data
@@ -30,22 +29,21 @@ def handleInput():
         num_of_jobs = int(input("Please enter the number of jobs: \n"))
 
         print("max process time is :", max_processing_time)
-
-        # Generate the soon-to-be input file
-        # input file format will be :
-        #
-        # NUMBER_OF_MACHINES
-        # JOB_INDEX JOB_SIZE JOB_TYPE
-        #
-        # notice that the total number of jobs will be indicated in the [n-1,0] cell
-
+        """
+         Generate the soon-to-be input file
+         input file format will be :
+        
+         NUMBER_OF_MACHINES
+         JOB_INDEX JOB_SIZE JOB_TYPE
+        
+         notice that the total number of jobs will be indicated in the [n-1,0] cell
+        """
         inpt = open("input.txt", 'w')
 
         inpt.write(str(num_of_machines))
         inpt.write("\n")
 
         # # Generate random number of jobs
-        # num_of_jobs = randint(MIN_NUM_OF_JOBS,MAX_NUM_OF_JOBS)
         print("number of jobs generated: ", num_of_jobs)
         jobs = []
         for index in range(0, num_of_jobs):
@@ -91,14 +89,10 @@ class Job(object):
     def __iter__(self):
         return iter(self)
 
-    # def __str__(self):
-    #     return "#: %s Length :%s Type: %s" % (self.number, self.length, self.type)
 
     def __str__(self):
         return "[%s, %s, %s]" % (self.number, self.length, self.type)
 
-    # def __repr__(self):
-    #     return "#: %s Length :%s Type: %s" % (self.number, self.length, self.type)
 
     def __repr__(self):
         return "[%s, %s, %s]" % (self.number, self.length, self.type)
@@ -124,7 +118,6 @@ class Job(object):
 
 class Machine(object):
     def __init__(self, num):
-        # self.assigned_jobs = [] #TODO: maybe switch to dictionary
         self.assigned_jobs = {}
         self.number = num  # Machine serial #
         self.span = 0  # Initial makespan
@@ -146,11 +139,6 @@ class Machine(object):
     def __iter__(self):
         return iter(self)
 
-    # def __getitem__(self, index):
-    #     return self.d[index]
-    #
-    # def __setitem__(self, index, value):
-    #     self.d[index] = value
 
     def retrieveJobsList(self):
         return self.assigned_jobs
@@ -166,7 +154,6 @@ class Machine(object):
     def retrieveJob(self, job_number):
         return self.assigned_jobs[job_number]
 
-    # TODO: make another version of this, for job objects and not numbers
     # removing job from the machine by job number
     def removeJob(self, job_number):
         job = self.retrieveJob(job_number)
@@ -204,9 +191,20 @@ class Machine(object):
                 re_list.append(index + 1)
         return re_list
 
-
+# handle input
 num_of_machines, raw_jobs = handleInput()
 num_of_jobs = len(raw_jobs)
+
+# output file and first prints
+out_file = open("output_"+str(NUM_OF_CHROMOZOMS)+"chromozoms_"+str(NUM_OF_GEN)+"generations_"+str(NUM_OF_TYPES)+"types_"+str(num_of_machines)+"machines_"+str(num_of_jobs)+"jobs_"+str(file_times)+".txt", "w")
+
+print("Number of Machines:",num_of_machines,file=out_file)
+print(num_of_jobs,"jobs:",NUM_OF_CHROMOZOMS,"chromozoms",NUM_OF_GEN,"generations",file=out_file)
+for job in raw_jobs:
+    print(job,file=out_file)
+
+print("---------------------------------",file=out_file)
+
 
 # Creates and returns a machines list
 def createMachines():
@@ -226,6 +224,7 @@ def createJobs():
         jobs_list.append(cur_job)
     print("-----------------FINISHED CREATING JOB OBJECTS----------------------\n\n", file=debug_file)
     return jobs_list
+
 
 # Creating objects
 machines_list = createMachines()
@@ -248,6 +247,7 @@ def createChrom():
     removeAllJobs()
     return ch
 
+
 # creating a population - returning a list (of lists) of NUM_OF_CHROMOZOMS chromosomes
 def createPop():
     pop = []
@@ -266,6 +266,7 @@ def createPop():
     return pop
 
 
+# returns current maximum makespan
 def makeSpan():
     max_span = 0
     for machine in machines_list:
@@ -274,28 +275,7 @@ def makeSpan():
     return max_span
 
 
-
-
-
-def printMachineStatConsole(chrom):
-    print("---------------MACHINES STATS--------------------------\n")
-    print("current chromosome:",chrom)
-    for machine in machines_list:
-        cur_job_list = machine.retrieveJobsList()
-        print("machine number ", machine.number, "assigned jobs [number,length,type]:")
-        l = []
-        for job_number, job in cur_job_list.items():
-            l.append(job)
-        print("".join(str(l)))
-
-        print("Assigned types: ", machine.getTypes())
-        print("Types histogram: ", machine.types, "Sum of each type: ", machine.types_sums, "Makespan : ", machine.span)
-        print("\n")
-
-    print("Max makespan is : ", makeSpan())
-    # print("------------------------------------------------\n", file=out_file)
-
-
+# removinf all jobs at current state
 def removeAllJobs():
     for machine in machines_list:
         cur_jobs = dict(machine.assigned_jobs)
@@ -307,35 +287,28 @@ def removeAllJobs():
             # print("REMOVED  -- machine#: ", machine.number, "assigned jobs: ", job)
 
 
-# TODO: better evaluiation
-# evalutation at the moment is just the makespan of a single chromosome
+# evalutation : at the moment is just the makespan of a single chromosome
 def evaluateOne(chromosome: list):
     # simulate adding the jobs
-    # TODO: If slow run, consider removing thos for. Might be redundant anyway
-    # TODO: use this for as another simulation function
     for i in range(len(chromosome)):
         machines_list[chromosome[i]].addJob(jobs_list[i])
         if not machines_list[chromosome[i]].isLegal():
             removeAllJobs()
             return -1
-    # printMachineStatConsole(chromosome)
-
     span = makeSpan()
-
     # revert to neutral state
     removeAllJobs()
-
-    # for i in range(len(chromosome)):
-    #     machines_list[chromosome[i]].removeJob(i)
 
     return span
 
 
-
-# TODO: merge fitness function to one that gets options between first or second etc
+"""
+here we can choose between one of three fitness functions
+comment the unwanted version / uncomment the wanted one
+"""
 # current fitness function = the difference between chromosome's makespan and the worst chromosome's makespan
 # def updateFitness(chormosome,worst):
-#     fitness = (worst-chormosome[1])+1   # TODO: fix smoothing
+#     fitness = (worst-chormosome[1])+1   # smoothing
 #     chormosome.append(fitness)
 #     return fitness
 
@@ -345,7 +318,7 @@ def evaluateOne(chromosome: list):
 #     chormosome.append(fitness)
 #     return fitness
 
-# TODO: get the s.d up ahead
+
 # using 1/squared distance
 def updateFitness(chromosome,worst):
     for i in range(len(chromosome[0])):
@@ -360,65 +333,54 @@ def updateFitness(chromosome,worst):
     return 1/sqared_distance
 
 
-
-
-
+# update actual probability according to the fitness function
 def updateProb(chromosome, sum):
     prob = chromosome[2]/(sum)
     chromosome.append(prob)
     return prob
+
 
 # go over popluation and calculate each one's fitness
 def evaluateAll(population: list):
     worst = 0
     best = sys.maxsize
     sum = 0
-    # prob_sum = 0
     probabilites = []
     for i in range(len(population)):
         eval = population[i][1]
-        # population[i].append(eval)
         if eval > worst:
             worst = eval
         if eval < best:
             best = eval
-        # print(population[i],population[i][1])
-        # print(population[i][0])
-        # print(eval)
     for j in range(len(population)):
         fitness = updateFitness(population[j], worst)
         sum += fitness
     for k in range(len(population)):
         prob = updateProb(population[k], sum)
         probabilites.append(prob)
-        # prob_sum += prob
-
-
-
 
     print("worst chromosome makespan:", worst, "best chromosome makespan:",best,file=out_file)
-
-
     return probabilites
 
-
-
-
+# prints a given population
 def printPop(population: list):
     for p in population:
         print(p)
 
 
-
+# selections of parent according to a given probavilities
 def selection(probs):
     # pick 2 parents out of this distribution
     t = [i for i in range(len(probs))]
     draw = choice(t, 2, p=probs, replace=False)
     return draw
 
-# crossover operator for 2 parents , producing 2 children
-# getting 2 lists, mom and dad, and slices ==-> how many slice do we want to crossover (2 slices = 1 cross point etc.)
-# also returns the makespan of each child
+
+"""
+ crossover operator for 2 parents , producing 2 children
+ getting 2 lists, mom and dad, and slices ==-> how many slice do we want to crossover (2 slices = 1 cross point etc.)
+ also returns the makespan of each child
+"""
 def xo(mom:list,eval_mom,dad:list,eval_dad,slices):
     legal = False
     legal_son = False
@@ -427,11 +389,7 @@ def xo(mom:list,eval_mom,dad:list,eval_dad,slices):
     daughter = []
     point_track = set()
     while not legal:
-        # random cut point
-        # slice_points = []
-        # for i in range(slices - 1):
-        #     slice_points.append(randint(0, len(dad)-1))
-        # slice_points.sort()
+
         slice_point = randint(0, len(dad)-1)
         if slice_point in point_track:
             continue
@@ -441,9 +399,6 @@ def xo(mom:list,eval_mom,dad:list,eval_dad,slices):
                 return son,eval_son,mom,eval_mom
             if legal_daughter is True:  # and legal_son is False
                 return dad, eval_dad, daughter, eval_daughter
-
-        #TODO: multi points slices (now theres only 1)
-        #for j in range(len(slice_points)):
         if legal_son is False:
             son = dad[:slice_point]+mom[slice_point:]
             eval_son = evaluateOne(son)
@@ -456,11 +411,11 @@ def xo(mom:list,eval_mom,dad:list,eval_dad,slices):
                 legal_daughter = True
 
         legal = legal_son and legal_daughter
-    # if eval_son == -1 or eval_daughter == -1:
-    #     print()
+
     return son,eval_son,daughter,eval_daughter
 
-#TODO: make room for mutation
+
+# reproducing procedure -  at the moment only 1% of new generation are getting mutated
 def reproduce(population:list):
     new_gen = []
     probs = []
@@ -471,13 +426,10 @@ def reproduce(population:list):
         son,eval_son,daughter,eval_daughter = xo(population[parents[0]][0],population[parents[0]][1], population[parents[1]][0],population[parents[1]][1],2)
         new_gen.append([son,eval_son])
         new_gen.append([daughter,eval_daughter])
-
-
-    # mutation comes here
+    # mutation
     # lets say 5% of the population gets mutated
     how_many_to_mutate = int(NUM_OF_CHROMOZOMS * (1/100))
     t = [i for i in range(NUM_OF_CHROMOZOMS)]
-    # TODO: maybe choose with other distribution
     # choose percent of the population randomly, uniformly
     indices_to_mutate = choice(t, how_many_to_mutate, replace=False)
     for i in range(len(indices_to_mutate)):
@@ -487,28 +439,37 @@ def reproduce(population:list):
     return new_gen
 
 
-
-# mutating a chromosome in N genes , at index 0 - chromosome itself, at index 1 - the makespand
+# mutating a chromosome in N genes , at index 0 - chromosome itself, at index 1 - the makespan
 def mutate(chromosome:list):
-
-
     # how_many_to_mutate = randint(0,len(chromosome[0]))
     t = [i for i in range(len(chromosome[0]))]
-    indices_to_mutate = choice(t, 1, replace=False)
+    # how_many_to_mutate = randint(1,5)
+
+    # 3 this is the maximum indices to mutate
+    indices_to_mutate = choice(t, 3, replace=False)
 
     # now needs to simulate as if the whole chromosome is assigned and check changes
     # assigning all
     for i in range(len(chromosome[0])):
         machines_list[chromosome[0][i]].addJob(jobs_list[i])
 
+    indices_track = set()
     for i in range(len(indices_to_mutate)):
 
         # remove old (and good) index
         machines_list[chromosome[0][indices_to_mutate[i]]].removeJob(indices_to_mutate[i])
-        #TODO: debug if indices_to_mutate[i] == jobs_list[indices_to_mutate[i]]
         legal = False
         while not legal:
             machine_rand = randint(0,num_of_machines-1)
+            # check if not already mutated this
+            if machine_rand in indices_track:
+                continue
+            # check if another mutation is possible
+            if len(indices_track) == len(chromosome):
+                break
+                
+            indices_track.add(machine_rand)
+
             # add a new one instead
             machines_list[machine_rand].addJob(jobs_list[indices_to_mutate[i]])
             if machines_list[machine_rand].isLegal():
@@ -521,25 +482,7 @@ def mutate(chromosome:list):
     removeAllJobs()
     return span
 
-
-
-
-
-
-
-#
-#
-#
-# pop = createPop()
-# printPop(pop)
-# mutate(pop[0][0])
-#
-# best_chromosome = []
-# probs = evaluateAll(pop)
-# for p in pop:
-#     print(p)
-
-
+# prints stats to file
 def printMachineStatOut():
     print("---------------MACHINES STATS --------------------------\n", file=out_file)
     for machine in machines_list:
@@ -557,7 +500,6 @@ def printMachineStatOut():
     print("Max makespan is : ", makeSpan(), file=out_file)
 
 
-
 # prints the chromosome's stat
 def printChromQual(chromosome:list):
     sum = 0
@@ -568,8 +510,7 @@ def printChromQual(chromosome:list):
     print("Optimal solution (sum/num_of_jobs) could be :",sum/num_of_machines,file=out_file)
     print("------------------------------------------------\n", file=out_file)
 
-
-
+# main function
 def genetic():
     print("Number of jobs:",len(jobs_list),file=out_file)
     print("Number of machines:",len(machines_list),file=out_file)
@@ -582,8 +523,6 @@ def genetic():
     best_chromosome = []
     probs = evaluateAll(pop)
 
-    # print("####################")
-
     for p in pop:
         print(p,file=out_file)
         print(p)
@@ -591,40 +530,26 @@ def genetic():
             best = p[1]
             best_chromosome = p
 
-    # debug
-    # probs_sum = 0
-    # for i in range(len(probs)):
-    #     probs_sum += probs[i]
-    # print(probs_sum)
-
-    # print(xo(pop[0][0], pop[1][0], 2))
-
-    # print("####################")
-
-    # for pp in new_gg:
-    #     print(pp)
-
     print("###############")
 
     for i in range(NUM_OF_GEN):
-        #TODO: check if pop = reproduce(pop) is valid
         new_gg = reproduce(pop)
         pop = new_gg
+        # print every 5 generations
         if (i%5 == 0):
-            print("New generation, number:",i)
-            print("New generation, number:",i, file=out_file)
+            print("New generation, number:", i, file=out_file)
         for p in pop:
-            if (i%5 == 0):
+            if (i%10 == 0):
                 print(p, file=out_file)
             if p[1] < best:
                 best = p[1]
                 best_chromosome = p
-        print("###############",file=out_file)
-    print("###############",file=out_file)
-    print("Best chromosome is :",best_chromosome[0],"with makespan of:",best_chromosome[1])
-    print("Best chromosome is :",best_chromosome[0],"with makespan of:",best_chromosome[1],file=out_file)
+        print("###############", file=out_file)
+    print("###############", file=out_file)
+    # do a console output also , to get a progress track
+    print("Best chromosome is :", best_chromosome[0], "with makespan of:", best_chromosome[1])
+    print("Best chromosome is :", best_chromosome[0], "with makespan of:", best_chromosome[1], file=out_file)
     printChromQual(best_chromosome[0])
-
 
 
 genetic()
