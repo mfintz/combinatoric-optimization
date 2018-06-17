@@ -34,11 +34,11 @@ I offer here three different heuristics :
 3. Genetic (_genetic.py_)
 
 #### Status : 
-    Needs self-code review, refactoring (?) and cleaning. Needs to add explaination of how to run etc.
+    Needs to add explaination of how to run etc.
 #### Functionality : 
-    Complete,can be improved. 
+    Done. 
 #### Optimizations & Improvments:
-    WIP
+    Done.
 
 
 
