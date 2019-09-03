@@ -154,8 +154,11 @@ class Machine(object):
     def retrieveJob(self, job_number):
         return self.assigned_jobs[job_number]
 
-    # removing job from the machine by job number
+    
     def removeJob(self, job_number):
+        """
+        Removing job from the machine by job number
+        """
         job = self.retrieveJob(job_number)
         job_type = job.getType() - 1
         del (self.assigned_jobs[job_number])
@@ -164,8 +167,11 @@ class Machine(object):
         self.types_sums[job_type] = self.types_sums[job_type] - job.length
         job.in_machine = -1
 
-    # Check if the machine has jobs of at most three types
+    
     def isLegal(self):
+        """
+        Check if the machine has jobs of at most three types
+        """
         counter = 0
         for t in self.types:
             if t > 0:
@@ -175,16 +181,22 @@ class Machine(object):
         else:
             return False
 
-    # Check how many different types do I have
+    
     def checkDiffTypes(self):
+        """
+        Check how many different types do I have
+        """
         count = 0
         for t in self.types:
             if t > 0:
                 count = count + 1
         return count
 
-    # returns a list of the types numbers assigned
+    
     def getTypes(self):
+        """
+        returns a list of the types numbers assigned
+        """
         re_list = []
         for index, t in enumerate(self.types):
             if t > 0:
@@ -206,8 +218,11 @@ for job in raw_jobs:
 print("---------------------------------",file=out_file)
 
 
-# Creates and returns a machines list
+
 def createMachines():
+    """
+    Creates and returns a machines list
+    """
     machines = []
     for i in range(0, num_of_machines):
         cur_machine = Machine(i)
@@ -215,8 +230,11 @@ def createMachines():
     return machines
 
 
-# Create and returns a list of jobs objects
+
 def createJobs():
+    """
+    Create and returns a list of jobs objects
+    """
     jobs_list = []
     for job in raw_jobs:
         cur_job = Job(int(job[0]), int(job[1]), int(job[2]))
@@ -230,8 +248,11 @@ def createJobs():
 machines_list = createMachines()
 jobs_list = createJobs()
 
-# creating a chromosome - returning a list of size num_of_jobs , each index is job number, value is the assigned machine
+
 def createChrom():
+    """
+    creating a chromosome - returning a list of size num_of_jobs , each index is job number, value is the assigned machine
+    """
     ch = [0]*num_of_jobs
     for i in range(num_of_jobs):
         legal = False
@@ -248,8 +269,10 @@ def createChrom():
     return ch
 
 
-# creating a population - returning a list (of lists) of NUM_OF_CHROMOZOMS chromosomes
 def createPop():
+    """
+    creating a population - returning a list (of lists) of NUM_OF_CHROMOZOMS chromosomes
+    """
     pop = []
     for i in range(NUM_OF_CHROMOZOMS):
         curr = []
@@ -266,8 +289,11 @@ def createPop():
     return pop
 
 
-# returns current maximum makespan
+
 def makeSpan():
+    """
+    returns current maximum makespan
+    """
     max_span = 0
     for machine in machines_list:
         if machine.span > max_span:
@@ -275,8 +301,11 @@ def makeSpan():
     return max_span
 
 
-# removinf all jobs at current state
+
 def removeAllJobs():
+    """
+    removinf all jobs at current state
+    """
     for machine in machines_list:
         cur_jobs = dict(machine.assigned_jobs)
         for key, job in cur_jobs.items():
@@ -287,8 +316,11 @@ def removeAllJobs():
             # print("REMOVED  -- machine#: ", machine.number, "assigned jobs: ", job)
 
 
-# evalutation : at the moment is just the makespan of a single chromosome
+
 def evaluateOne(chromosome: list):
+    """
+    evalutation : at the moment is just the makespan of a single chromosome
+    """
     # simulate adding the jobs
     for i in range(len(chromosome)):
         machines_list[chromosome[i]].addJob(jobs_list[i])
@@ -318,9 +350,11 @@ comment the unwanted version / uncomment the wanted one
 #     chormosome.append(fitness)
 #     return fitness
 
-
-# using 1/squared distance
+ 
 def updateFitness(chromosome,worst):
+    """
+    using 1/squared distance
+    """
     for i in range(len(chromosome[0])):
         machines_list[chromosome[0][i]].addJob(jobs_list[i])
     machines_span = []
@@ -333,15 +367,19 @@ def updateFitness(chromosome,worst):
     return 1/sqared_distance
 
 
-# update actual probability according to the fitness function
 def updateProb(chromosome, sum):
+    """
+    update actual probability according to the fitness function
+    """
     prob = chromosome[2]/(sum)
     chromosome.append(prob)
     return prob
 
 
-# go over popluation and calculate each one's fitness
 def evaluateAll(population: list):
+    """
+    go over popluation and calculate each one's fitness
+    """
     worst = 0
     best = sys.maxsize
     sum = 0
@@ -362,26 +400,32 @@ def evaluateAll(population: list):
     print("worst chromosome makespan:", worst, "best chromosome makespan:",best,file=out_file)
     return probabilites
 
-# prints a given population
+
 def printPop(population: list):
+    """
+    Prints a given population
+    """
     for p in population:
         print(p)
 
 
-# selections of parent according to a given probavilities
 def selection(probs):
+    """
+    selections of parent according to a given probavilities
+    """
     # pick 2 parents out of this distribution
     t = [i for i in range(len(probs))]
     draw = choice(t, 2, p=probs, replace=False)
     return draw
 
 
-"""
- crossover operator for 2 parents , producing 2 children
- getting 2 lists, mom and dad, and slices ==-> how many slice do we want to crossover (2 slices = 1 cross point etc.)
- also returns the makespan of each child
-"""
+
 def xo(mom:list,eval_mom,dad:list,eval_dad,slices):
+    """
+    crossover operator for 2 parents , producing 2 children
+    getting 2 lists, mom and dad, and slices ==-> how many slice do we want to crossover (2 slices = 1 cross point etc.)
+    also returns the makespan of each child
+    """
     legal = False
     legal_son = False
     legal_daughter = False
@@ -415,8 +459,11 @@ def xo(mom:list,eval_mom,dad:list,eval_dad,slices):
     return son,eval_son,daughter,eval_daughter
 
 
-# reproducing procedure -  at the moment only 1% of new generation are getting mutated
+
 def reproduce(population:list):
+    """
+    Reproducing procedure -  at the moment only 1% of new generation are getting mutated
+    """
     new_gen = []
     probs = []
     for p in population:
@@ -439,8 +486,11 @@ def reproduce(population:list):
     return new_gen
 
 
-# mutating a chromosome in N genes , at index 0 - chromosome itself, at index 1 - the makespan
+
 def mutate(chromosome:list):
+    """
+    Mutating a chromosome in N genes , at index 0 - chromosome itself, at index 1 - the makespan
+    """
     # how_many_to_mutate = randint(0,len(chromosome[0]))
     t = [i for i in range(len(chromosome[0]))]
     # how_many_to_mutate = randint(1,5)
@@ -482,8 +532,11 @@ def mutate(chromosome:list):
     removeAllJobs()
     return span
 
-# prints stats to file
+
 def printMachineStatOut():
+    """
+    Prints stats to file
+    """
     print("---------------MACHINES STATS --------------------------\n", file=out_file)
     for machine in machines_list:
         cur_job_list = machine.retrieveJobsList()
@@ -500,8 +553,11 @@ def printMachineStatOut():
     print("Max makespan is : ", makeSpan(), file=out_file)
 
 
-# prints the chromosome's stat
+
 def printChromQual(chromosome:list):
+    """
+    Prints the chromosome's stat
+    """
     sum = 0
     for i in range(len(chromosome)):
         machines_list[chromosome[i]].addJob(jobs_list[i])
@@ -510,8 +566,11 @@ def printChromQual(chromosome:list):
     print("Optimal solution (sum/num_of_jobs) could be :",sum/num_of_machines,file=out_file)
     print("------------------------------------------------\n", file=out_file)
 
-# main function
+
 def genetic():
+    """
+    Main routine
+    """
     print("Number of jobs:",len(jobs_list),file=out_file)
     print("Number of machines:",len(machines_list),file=out_file)
     print("Number of chromosomes:",NUM_OF_CHROMOZOMS,file=out_file)
